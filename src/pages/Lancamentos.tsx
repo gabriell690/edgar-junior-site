@@ -67,7 +67,7 @@ export default function Lancamentos() {
                 text-yellow-400
               "
             >
-              Lançamentos
+              Oportunidades
             </span>
 
             <h1
@@ -80,9 +80,9 @@ export default function Lancamentos() {
                 text-[clamp(3rem,8vw,5.5rem)]
               "
             >
-              Empreendimentos
+              lançamentos
               <span className="block text-yellow-400 font-semibold">
-                Exclusivos
+                Imobiliários
               </span>
             </h1>
 
