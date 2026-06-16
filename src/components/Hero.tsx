@@ -15,7 +15,7 @@ export default function Hero() {
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/55" />
+      <div className="absolute inset-0 bg-black/10" />
 
       {/* Gradient */}
       <div className="absolute inset-0 bg-linear-to-r from-black via-black/70 to-black/20" />
