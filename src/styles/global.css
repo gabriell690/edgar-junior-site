@@ -1,0 +1,24 @@
+:root {
+  --gold: #f5c400;
+  --gold-dark: #d4af37;
+
+  --bg-primary: #050505;
+  --bg-secondary: #0a0a0a;
+
+  --container: 1440px;
+
+  --section-spacing: 8rem;
+}
+
+.container-edgar {
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.section {
+  padding-top: var(--section-spacing);
+  padding-bottom: var(--section-spacing);
+}

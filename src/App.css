@@ -1,0 +1,34 @@
+/* Container principal da aplicação */
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Evita overflow horizontal */
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Links */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Botões */
+
+button {
+  font-family: inherit;
+}
+
+/* Imagens */
+
+img {
+  max-width: 100%;
+  display: block;
+}
