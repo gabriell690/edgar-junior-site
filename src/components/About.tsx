@@ -18,7 +18,7 @@ export default function About() {
                 absolute
                 -inset-4
                 rounded-3xl
-                bg-gradient-to-r
+                bg-linear-to-r
                 from-yellow-500/20
                 to-transparent
                 blur-2xl

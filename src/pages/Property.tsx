@@ -36,7 +36,7 @@ export default function Property() {
           <img
             src={property.cover}
             alt={property.name}
-            className="w-full h-[500px] object-cover rounded-2xl mb-10"
+            className="w-full h-125 object-cover rounded-2xl mb-10"
           />
 
           <h1 className="text-4xl font-bold mb-6">

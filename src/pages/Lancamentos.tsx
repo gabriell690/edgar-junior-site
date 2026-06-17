@@ -169,7 +169,7 @@ export default function Lancamentos() {
              <article
   className="
     w-full
-    max-w-[720px]
+    max-w-180
 
     group
     overflow-hidden

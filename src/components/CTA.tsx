@@ -2,7 +2,7 @@ export default function CTA() {
   return (
     <section
       id="contato"
-      className="py-32 bg-gradient-to-b from-black to-zinc-950 text-white"
+      className="py-32 bg-linear-to-b from-black to-zinc-950 text-white"
     >
       <div className="max-w-4xl mx-auto px-6 text-center">
 
