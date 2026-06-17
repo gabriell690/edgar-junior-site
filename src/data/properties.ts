@@ -14,7 +14,7 @@ export const properties: Property[] = [
   {
     slug: "Beach Class",
     name: "Beach Class",
-    neighborhood: "Bessa",
+    neighborhood: "Bessa - João Pessoa/PB",
     location: "Bessa - João Pessoa/PB",
     price: "A partir de R$360.000,00",
     delivery: " Dezembro de 2027",
@@ -31,7 +31,7 @@ export const properties: Property[] = [
   {
     slug: "Summer Fit",
     name: "Summer Fit",
-    neighborhood: "Bessa",
+    neighborhood: "Bessa - João Pessoa/PB",
     location: "Bessa (Beira-Mar) - João Pessoa/PB",
     price: "A partir de R$415.000,00",
     delivery: " Dezembro de 2028",
@@ -43,7 +43,7 @@ export const properties: Property[] = [
   {
     slug: "Versa",
     name: "Versa",
-    neighborhood: "Bessa",
+    neighborhood: "Bessa - João Pessoa/PB",
     location: "Bessa - João Pessoa/PB",
     price: "A partir de R$329.000,00",
     delivery: " Novembro de 2028",
@@ -56,7 +56,7 @@ export const properties: Property[] = [
   {
     slug: "DuoBreeze",
     name: "DuoBreeze",
-    neighborhood: "Bessa",
+    neighborhood: "Bessa - João Pessoa/PB",
     location: "Bessa - João Pessoa/PB",
     price: "A partir de R$ 512.000,00",
     delivery: " Dezembro de 2028",
@@ -68,7 +68,7 @@ export const properties: Property[] = [
   {
     slug: "Ocean View",
     name: "Ocean View",
-    neighborhood: "Bessa",
+    neighborhood: "Bessa - João Pessoa/PB",
     location: "Bessa - João Pessoa/PB",
     price: "A partir de R$498.000,00",
     delivery: " Agosto de 2028",
@@ -80,7 +80,7 @@ export const properties: Property[] = [
   {
     slug: "Green Park Bessa",
     name: "Green Park Bessa",
-    neighborhood: "Bessa",
+    neighborhood: "Bessa - João Pessoa/PB",
     location: "Bessa- João Pessoa/PB",
     price: "A partir de R$452.000,00",
     delivery: "Dezembro de 2028",
@@ -92,7 +92,7 @@ export const properties: Property[] = [
   {
     slug: "The Diamond",
     name: "The Diamond",
-    neighborhood: "Cabo Branco",
+    neighborhood: "Cabo Branco - João Pessoa/PB",
     location: "Cabo Branco - João Pessoa/PB",
     price: "A partir de R$590.000,00",
     delivery: "Março de 2030",
@@ -104,7 +104,7 @@ export const properties: Property[] = [
   {
     slug: "Lumini",
     name: "Lumini",
-    neighborhood: "Cabo Branco",
+    neighborhood: "Cabo Branco - João Pessoa/PB",
     location: "Cabo branco - João Pessoa/PB",
     price: "A partir de R$452.000,00",
     delivery: "Julho de 2029",

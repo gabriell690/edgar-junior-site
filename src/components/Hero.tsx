@@ -1,12 +1,48 @@
- 
+import { useMemo, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { MapPin, Search } from "lucide-react";
+import { properties } from "../data/properties";
 
 export default function Hero() {
+  const navigate = useNavigate();
+
+  const [search, setSearch] = useState("");
+
+  const suggestions = useMemo(() => {
+    if (!search.trim()) return [];
+
+    return properties.filter((property) =>
+      [
+        property.name,
+        property.neighborhood,
+        property.location,
+        property.slug,
+      ]
+        .join(" ")
+        .toLowerCase()
+        .includes(search.toLowerCase())
+    );
+  }, [search]);
+
+  function handleSearch() {
+    if (!search.trim()) {
+      navigate("/lancamentos");
+      return;
+    }
+
+    if (suggestions.length > 0) {
+      navigate(`/lancamentos/${suggestions[0].slug}`);
+    } else {
+      navigate("/lancamentos");
+    }
+  }
+
   return (
-    <section className="relative h-svh overflow-hidden bg-black">
+    <section className="relative min-h-screen overflow-hidden bg-black">
 
       {/* Background */}
       <div
-        className="absolute inset-0 scale-[1.03]"
+        className="absolute inset-0 scale-105"
         style={{
           backgroundImage: "url('/hero.jpg')",
           backgroundSize: "cover",
@@ -15,236 +51,233 @@ export default function Hero() {
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/10" />
+      <div className="absolute inset-0 bg-black/65" />
 
-      {/* Gradient */}
-      <div className="absolute inset-0 bg-linear-to-r from-black via-black/70 to-black/20" />
-
-      {/* Glow */}
-      <div
-        className="
-          absolute
-          left-[15%]
-          top-[40%]
-          h-100
-          w-100
-          rounded-full
-          bg-yellow-500/10
-          blur-[120px]
-        "
-      />
-
+     
       {/* Content */}
-      <div className="relative z-10 h-full flex items-center">
+      <div className="relative z-10 min-h-screen flex items-center justify-center px-6">
 
-        <div
-          className="
-            w-full
-            max-w-7xl
-            mx-auto
-            px-6
-            sm:px-8
-            lg:px-12
-          "
-        >
-          <div
-            className="
-              max-w-170
-              pt-[10vh]
-            "
-          >
+        <div className="w-full max-w-6xl text-center">
 
-            {/* Badge */}
-            <div
+          {/* Badge */}
+          <div className="inline-flex items-center rounded-full border border-yellow-500/20 bg-white/5 px-5 py-2 text-xs uppercase tracking-[0.3em] text-yellow-400 backdrop-blur-xl">
+            Consultoria Imobiliária Exclusiva
+          </div>
+
+          {/* Title */}
+          <h1 className="mt-8 text-[clamp(3rem,7vw,6rem)] font-light leading-[0.95] tracking-[-0.05em] text-white">
+            Encontre o imóvel ideal
+            <span className="block font-semibold text-yellow-400">
+              para o próximo capítulo
+            </span>
+            da sua história
+          </h1>
+
+          {/* Description */}
+          <p className="mx-auto mt-6 max-w-2xl text-lg text-zinc-300">
+            Lançamentos exclusivos em Campina Grande e João Pessoa.
+          </p>
+
+          {/* Search */}
+          <div className="relative mx-auto mt-14 w-full max-w-5xl">
+
+            {/* Search Bar */}
+            <div className="overflow-hidden rounded-[32px] border border-white/20 bg-white/95 shadow-[0_20px_80px_rgba(0,0,0,0.35)] backdrop-blur-2xl">
+
+              <div className="flex flex-col md:flex-row items-center">
+
+                {/* Input */}
+                <div className="flex flex-1 items-center px-8">
+
+                  <Search className="h-5 w-5 text-zinc-400 mr-4" />
+
+                  <div className="flex-1">
+
+                  
+                    <input
+                      value={search}
+                      onChange={(e) => setSearch(e.target.value)}
+                      placeholder="Cidade, bairro ou empreendimento"
+                      className="
+                        w-full
+                        h-[72px]
+                        bg-transparent
+                        outline-none
+                        text-zinc-900
+                        text-lg
+                      "
+                    />
+
+                  </div>
+
+                </div>
+
+                {/* Button */}
+                <button
+                  onClick={handleSearch}
+                  className="
+                    m-3
+                    h-14
+                    rounded-2xl
+                    bg-yellow-500
+                    px-10
+                    font-semibold
+                    text-black
+                    transition-all
+                    duration-300
+                    hover:bg-yellow-400
+                  "
+                >
+                  Buscar
+                </button>
+
+              </div>
+
+            </div>
+
+            {/* Suggestions */}
+            {search && suggestions.length > 0 && (
+              <div
+                className="
+                  absolute
+                  left-0
+                  right-0
+                  mt-4
+                  overflow-hidden
+                  rounded-3xl
+                  border
+                  border-zinc-200
+                  bg-white
+                  shadow-2xl
+                  z-50
+                "
+              >
+
+                <div
+                  className="
+                    max-h-[430px]
+                    overflow-y-auto
+                  "
+                >
+
+                  {suggestions.map((property) => (
+                    <Link
+                      key={property.slug}
+                      to={`/lancamentos/${property.slug}`}
+                      className="
+                        flex
+                        items-center
+                        gap-4
+                        px-6
+                        py-5
+                        border-b
+                        border-zinc-100
+                        transition-all
+                        hover:bg-zinc-50
+                      "
+                    >
+
+                      {/* Icon */}
+                      <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-yellow-500/10">
+                        <MapPin className="h-5 w-5 text-yellow-500" />
+                      </div>
+
+                      {/* Text */}
+                      <div className="flex-1 text-left">
+
+                        <div className="font-semibold text-zinc-900">
+                          {property.name}
+                        </div>
+
+                        <div className="mt-1 text-sm text-zinc-500">
+                          {property.neighborhood}
+                        </div>
+
+                      </div>
+
+                    </Link>
+                  ))}
+
+                </div>
+
+              </div>
+            )}
+
+          </div>
+
+          {/* Buttons */}
+          <div className="mt-10 flex flex-wrap justify-center gap-4">
+
+            <Link
+              to="/lancamentos"
               className="
-                inline-flex
-                items-center
+                rounded-full
+                bg-yellow-500
+                px-8
+                py-4
+                font-medium
+                text-black
+                transition
+                hover:bg-yellow-400
+              "
+            >
+              Ver Lançamentos
+            </Link>
+
+            <a
+              href="https://wa.me/5583996618063"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
                 rounded-full
                 border
-                border-yellow-500/20
+                border-white/15
                 bg-white/5
-                backdrop-blur-xl
-                px-4
-                py-2
-                text-[10px]
-                sm:text-xs
-                uppercase
-                tracking-[0.25em]
-                text-yellow-400
-              "
-            >
-              Consultoria Imobiliária Exclusiva
-            </div>
-
-            {/* Headline */}
-            <h1
-              className="
-                mt-6
+                px-8
+                py-4
                 text-white
-                font-light
-                leading-[0.98]
-                tracking-[-0.04em]
-                text-[clamp(2.4rem,5vw,4.8rem)]
+                backdrop-blur-xl
+                transition
+                hover:bg-white/10
               "
             >
-              O investimento certo para
-              <span className="block font-semibold text-yellow-400">
-                o próximo capítulo
+              Atendimento Exclusivo
+            </a>
+
+          </div>
+
+          {/* Stats */}
+          <div className="mt-14 flex flex-wrap justify-center gap-10 text-sm text-white/60">
+
+            <div className="flex flex-col">
+              <span className="text-2xl font-semibold text-white">
+                +100
               </span>
-              da sua história.
-            </h1>
-
-            {/* Description */}
-            <p
-              className="
-                mt-6
-                max-w-140
-                text-sm
-                md:text-base
-                text-zinc-300
-                leading-relaxed
-              "
-            >
-              Assessoria especializada para clientes que buscam
-              patrimônio, exclusividade e oportunidades imobiliárias
-              diferenciadas em Campina Grande e João Pessoa.
-            </p>
-
-            {/* CTA */}
-            <div
-              className="
-                mt-8
-                flex
-                flex-col
-                sm:flex-row
-                gap-3
-              "
-            >
-              <a
-                href="/lancamentos"
-                className="
-                  inline-flex
-                  items-center
-                  justify-center
-                  rounded-full
-                  bg-yellow-500
-                  px-6
-                  py-3
-                  font-medium
-                  text-black
-                  transition-all
-                  duration-300
-                  hover:bg-yellow-400
-                  hover:scale-[1.02]
-                "
-              >
-                Explorar Oportunidades
-              </a>
-
-              <a
-                href="https://wa.me/5583996618063"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="
-                  inline-flex
-                  items-center
-                  justify-center
-                  rounded-full
-                  border
-                  border-white/10
-                  bg-white/5
-                  backdrop-blur-xl
-                  px-6
-                  py-3
-                  text-white
-                  transition-all
-                  duration-300
-                  hover:bg-white/10
-                "
-              >
-                Consultoria Exclusiva
-              </a>
+              <span>Clientes</span>
             </div>
 
-            {/* Credibilidade */}
-            <div
-              className="
-                mt-10
-                flex
-                flex-wrap
-                items-center
-                gap-4
-                text-xs
-                md:text-sm
-                text-white/60
-              "
-            >
-              <span>+100 Clientes Atendidos</span>
+            <div className="flex flex-col">
+              <span className="text-2xl font-semibold text-white">
+                {properties.length}
+              </span>
+              <span>Lançamentos</span>
+            </div>
 
-              <span className="h-1 w-1 rounded-full bg-yellow-400" />
-
+            <div className="flex flex-col">
+              <span className="text-2xl font-semibold text-white">
+                PB
+              </span>
               <span>Campina Grande & João Pessoa</span>
-
-              <span className="h-1 w-1 rounded-full bg-yellow-400" />
-
-              <span>Atendimento Exclusivo</span>
             </div>
 
           </div>
+
         </div>
 
-      </div>
-
-      {/* Scroll Indicator */}
-      <div
-        className="
-          absolute
-          bottom-8
-          left-1/2
-          -translate-x-1/2
-          flex
-          flex-col
-          items-center
-          gap-2
-        "
-      >
-        <span
-          className="
-            text-[10px]
-            uppercase
-            tracking-[0.3em]
-            text-white/40
-          "
-        >
-          Scroll
-        </span>
-
-        <div
-          className="
-            h-8
-            w-5
-            rounded-full
-            border
-            border-white/20
-            flex
-            justify-center
-            pt-1.5
-          "
-        >
-          <div
-            className="
-              h-1.5
-              w-1.5
-              rounded-full
-              bg-yellow-400
-              animate-bounce
-            "
-          />
-        </div>
       </div>
 
       {/* Fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-20 bg-linear-to-t from-black to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black to-transparent" />
 
     </section>
   );
