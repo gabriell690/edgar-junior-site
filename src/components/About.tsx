@@ -11,33 +11,71 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
 
           {/* FOTO */}
-          <div className="relative">
+     <div className="relative flex justify-center items-center lg:-translate-x-24">
 
-            <div
-              className="
-                absolute
-                -inset-4
-                rounded-3xl
-                bg-linear-to-r
-                from-yellow-500/20
-                to-transparent
-                blur-2xl
-              "
-            />
+  {/* Foto esquerda */}
+  <div
+    className="
+      absolute
+      top-8
+      -left-24
+      rotate-[-10deg]
+      w-[240px]
+      h-[320px]
+      rounded-3xl
+      overflow-hidden
+      opacity-60
+      hidden lg:block
+    "
+  >
+    <img
+      src="/edgar2.jpg"
+      className="w-full h-full object-cover"
+      alt=""
+    />
+  </div>
 
-            <img
-              src="/edgar.jpg"
-              alt="Edgar Junior"
-              className="
-                relative
-                rounded-3xl
-                w-full
-                object-cover
-                shadow-2xl
-              "
-            />
+  {/* Foto direita */}
+  <div
+    className="
+      absolute
+      top-8
+      -right-24
+      rotate-[10deg]
+      w-[240px]
+      h-[320px]
+      rounded-3xl
+      overflow-hidden
+      opacity-60
+      hidden lg:block
+    "
+  >
+    <img
+      src="/edgar3.jpg"
+      className="w-full h-full object-cover"
+      alt=""
+    />
+  </div>
 
-          </div>
+  {/* Foto principal */}
+  <div
+    className="
+      relative
+      z-10
+      overflow-hidden
+      rounded-3xl
+      shadow-[0_30px_80px_rgba(0,0,0,0.5)]
+      max-w-md
+    "
+  >
+    <img
+      src="/edgar1.jpg"
+      alt="Edgar Junior"
+      className="w-full object-cover"
+    />
+  </div>
+
+</div>
 
           {/* TEXTO */}
           <div>
