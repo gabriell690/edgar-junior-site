@@ -81,60 +81,60 @@ export default function Hero() {
           {/* Search */}
           <div className="relative mx-auto mt-14 w-full max-w-5xl">
 
-            {/* Search Bar */}
-            <div className="overflow-hidden rounded-[32px] border border-white/20 bg-white/95 shadow-[0_20px_80px_rgba(0,0,0,0.35)] backdrop-blur-2xl">
+           <div
+  className="
+    bg-white/95
+    backdrop-blur-2xl
+    rounded-[28px]
+    shadow-[0_20px_80px_rgba(0,0,0,0.35)]
+    overflow-hidden
+  "
+>
+  <div className="flex flex-col md:flex-row items-stretch">
 
-              <div className="flex flex-col md:flex-row items-center">
+    {/* Campo */}
+    <div className="flex flex-1 items-center px-6">
 
-                {/* Input */}
-                <div className="flex flex-1 items-center px-8">
+      <Search className="h-5 w-5 text-zinc-400 mr-4 shrink-0" />
 
-                  <Search className="h-5 w-5 text-zinc-400 mr-4" />
+      <input
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+        placeholder="Cidade, bairro ou empreendimento"
+        className="
+          flex-1
+          h-[72px]
+          bg-transparent
+          outline-none
+          text-base
+          md:text-lg
+          text-zinc-900
+        "
+      />
 
-                  <div className="flex-1">
+    </div>
 
-                  
-                    <input
-                      value={search}
-                      onChange={(e) => setSearch(e.target.value)}
-                      placeholder="Cidade, bairro ou empreendimento"
-                      className="
-                        w-full
-                        h-[72px]
-                        bg-transparent
-                        outline-none
-                        text-zinc-900
-                        text-lg
-                      "
-                    />
+    {/* Botão */}
+    <button
+      onClick={handleSearch}
+      className="
+        h-[64px]
+        md:h-[72px]
+        px-10
+        bg-yellow-500
+        hover:bg-yellow-400
+        text-black
+        font-semibold
+        transition-all
+        duration-300
+        md:min-w-[180px]
+      "
+    >
+      Buscar
+    </button>
 
-                  </div>
-
-                </div>
-
-                {/* Button */}
-                <button
-                  onClick={handleSearch}
-                  className="
-                    m-3
-                    h-14
-                    rounded-2xl
-                    bg-yellow-500
-                    px-10
-                    font-semibold
-                    text-black
-                    transition-all
-                    duration-300
-                    hover:bg-yellow-400
-                  "
-                >
-                  Buscar
-                </button>
-
-              </div>
-
-            </div>
-
+  </div>
+</div>
             {/* Suggestions */}
             {search && suggestions.length > 0 && (
               <div
