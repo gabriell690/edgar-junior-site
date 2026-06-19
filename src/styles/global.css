@@ -22,3 +22,26 @@
   padding-top: var(--section-spacing);
   padding-bottom: var(--section-spacing);
 }
+html,
+body,
+#root {
+  width: 100%;
+  overflow-x: hidden;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
