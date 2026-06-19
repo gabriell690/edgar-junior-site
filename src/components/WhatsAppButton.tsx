@@ -5,19 +5,19 @@ export default function WhatsAppButton() {
     <div className="fixed bottom-6 right-6 z-[999] flex flex-col items-center">
 
       {/* Foto Edgar */}
-      <img
-        src="/edgar-whatsapp.png"
-        alt="Edgar Junior"
-        className="
-          w-36
-          md:w-44
-          drop-shadow-[0_0_30px_rgba(255,200,0,0.5)]
-          animate-float
-          select-none
-          pointer-events-none
-        "
-      />
-
+     <img
+  src="/edgar-whatsapp.png"
+  alt="Edgar Junior"
+  className="
+    w-36
+    md:w-44
+    -mb-6
+    drop-shadow-[0_0_30px_rgba(255,200,0,0.5)]
+    animate-float
+    select-none
+    pointer-events-none
+  "
+/>
   
       {/* Botão */}
       <a
