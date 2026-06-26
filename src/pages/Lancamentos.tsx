@@ -80,7 +80,7 @@ export default function Lancamentos() {
                 text-[clamp(3rem,8vw,5.5rem)]
               "
             >
-              lançamentos
+              Lançamentos
               <span className="block text-yellow-400 font-semibold">
                 Imobiliários
               </span>
