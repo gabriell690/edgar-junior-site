@@ -11,19 +11,20 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
 
           {/* FOTO */}
-     <div className="relative flex justify-center items-center lg:-translate-x-24">
+     <div className="relative flex justify-center items-center w-full lg:-translate-x-24">
 
  
 {/* Foto principal */}
 <div
-  className="
-    relative
-    z-10
-    overflow-hidden
-    rounded-3xl
-    shadow-[0_30px_80px_rgba(0,0,0,0.5)]
-    w-[550px]
-  "
+ className="
+relative
+z-10
+overflow-hidden
+rounded-3xl
+shadow-[0_30px_80px_rgba(0,0,0,0.5)]
+w-full
+max-w-137.5
+"
 >
   <img
     src="/edgar1.jpg"
