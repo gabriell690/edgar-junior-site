@@ -41,14 +41,20 @@ return (
 <section className="relative min-h-screen overflow-hidden bg-black">
 
   {/* Background */}
-  <div
-    className="absolute inset-0"
-    style={{
-      backgroundImage: "url('/hero.jpg')",
-      backgroundPosition: "center",
-      backgroundSize: "cover",
-    }}
+ <div className="absolute inset-0 overflow-hidden">
+  <img
+    src="/hero.jpg"
+    alt="Hero"
+    className="
+      hero-zoom
+      absolute
+      inset-0
+      h-full
+      w-full
+      object-cover
+    "
   />
+</div>
 
   {/* Overlay */}
   <div className="absolute inset-0 bg-black/70" />
