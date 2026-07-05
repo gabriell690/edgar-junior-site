@@ -81,7 +81,7 @@ export default function Footer() {
   <p className="text-zinc-600 text-xs mt-2">
     Desenvolvido por{" "}
     <a
-      href="https://gabriellbatista.com"
+      href="https://www.instagram.com/gabriellbatistareal/"
       target="_blank"
       rel="noreferrer"
       className="hover:text-yellow-500 transition"

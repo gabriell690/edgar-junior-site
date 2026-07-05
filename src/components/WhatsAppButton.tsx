@@ -2,7 +2,7 @@ import { MessageCircle } from "lucide-react";
 
 export default function WhatsAppButton() {
   return (
-    <div className="fixed bottom-3 right-3 md:bottom-6 md:right-6 z-[999] flex flex-col items-center">
+    <div className="fixed bottom-3 right-3 md:bottom-6 md:right-6 z-999 flex flex-col items-center">
 
       {/* Foto Edgar */}
       <img

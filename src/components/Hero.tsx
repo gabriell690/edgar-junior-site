@@ -135,7 +135,7 @@ return (
         <div
           className="
           overflow-hidden
-          rounded-[32px]
+          rounded-4xl
           bg-white
           shadow-[0_20px_80px_rgba(0,0,0,0.4)]
         "
@@ -317,7 +317,7 @@ return (
   </div>
 
   {/* Fade inferior */}
-  <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black to-transparent" />
+  <div className="absolute bottom-0 left-0 right-0 h-32 bg-linear-to-t from-black to-transparent" />
 
 </section>
 );

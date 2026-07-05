@@ -1,22 +1,32 @@
 import { Routes, Route } from "react-router-dom";
 
 import Home from "../pages/Home";
-import Lancamentos from "../pages/Lancamentos";
-import Property from "../pages/Property";
+import JoaoPessoa from "../pages/JoaoPessoa";
+import CampinaGrande from "../pages/CampinaGrande";
+import ConsultoriaImobiliaria from "../pages/ConsultoriaImobiliaria";
 
 export default function Router() {
   return (
     <Routes>
+      {/* Home */}
       <Route path="/" element={<Home />} />
 
+      {/* João Pessoa */}
       <Route
-        path="/lancamentos"
-        element={<Lancamentos />}
+        path="/joao-pessoa"
+        element={<JoaoPessoa />}
       />
 
+      {/* Campina Grande */}
       <Route
-        path="/lancamentos/:slug"
-        element={<Property />}
+        path="/campina-grande"
+        element={<CampinaGrande />}
+      />
+
+      {/* Consultoria */}
+      <Route
+        path="/consultoria-imobiliaria"
+        element={<ConsultoriaImobiliaria />}
       />
     </Routes>
   );

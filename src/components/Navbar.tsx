@@ -32,13 +32,12 @@ export default function Navbar() {
     };
   }, []);
 
-  const links = [
-    { label: "Sobre", href: "#sobre" },
-    { label: "Lançamentos", href: "/lancamentos" },
-    { label: "Campina Grande", href: "#campina" },
-    { label: "João Pessoa", href: "#joaopessoa" },
-    { label: "Contato", href: "#contato" },
-  ];
+ const links = [
+  { label: "Sobre", href: "#sobre" },
+  { label: "João Pessoa", href: "/joao-pessoa" },
+  { label: "Campina Grande", href: "/campina-grande" },
+  { label: "Consultoria Imobiliária", href: "/consultoria-imobiliaria" },
+];
 
   return (
     <>
