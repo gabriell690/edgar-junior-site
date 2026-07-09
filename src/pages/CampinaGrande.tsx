@@ -74,41 +74,83 @@ export default function CampinaGrande() {
       </section>
 
       {/* MAPA */}
-      <section className="pb-24">
-        <div className="container-edgar">
+     {/* MAPA */}
+<section className="pb-32">
 
-          <div className="grid lg:grid-cols-2 gap-14 items-center">
+  <div className="container-edgar">
 
-            <div>
+    <div className="mx-auto max-w-7xl rounded-[36px] border border-yellow-500/20 bg-linear-to-b from-zinc-900/70 to-black  py-14 px-10 lg:py-20 lg:px-16 shadow-[0_0_60px_rgba(234,179,8,0.08)]">
+
+     <div className="grid lg:grid-cols-2 gap-24 items-center min-h-140">
+
+        {/* FOTO */}
+        <div className="flex justify-center">
+
+          <div className="relative group w-full max-w-160">
+
+            {/* Glow */}
+            <div className="absolute -inset-4 rounded-[36px] bg-yellow-500/10 blur-3xl opacity-0 transition-all duration-700 group-hover:opacity-100"></div>
+
+            {/* Cantos */}
+            <div className="absolute -left-4 -top-4 h-14 w-14 border-l-[3px] border-t-[3px] border-yellow-500 rounded-tl-2xl"></div>
+
+            <div className="absolute -right-4 -bottom-4 h-14 w-14 border-r-[3px] border-b-[3px] border-yellow-500 rounded-br-2xl"></div>
+
+            {/* Quadro */}
+            <div className="relative overflow-hidden rounded-[30px] border border-yellow-500 bg-zinc-950 p-3 shadow-[0_0_45px_rgba(234,179,8,0.12)]">
+
               <img
-                src="/campina-grande-mapa.png"
-                alt="Mapa de Campina Grande"
-                className="rounded-3xl border border-white/10"
-              />
-            </div>
+  src="/campina-grande-mapa.png"
+  alt="Campina Grande"
+  className="h-105 lg:h-125 w-full rounded-[22px] object-cover transition-transform duration-700 group-hover:scale-105"
+/>
 
-            <div>
-              <span className="text-yellow-400 uppercase tracking-[0.3em] text-xs">
-                Localização Estratégica
-              </span>
+              {/* Gradiente */}
+              <div className="absolute inset-0 rounded-[22px] bg-linear-to-t from-black/35 via-transparent to-transparent"></div>
 
-              <h2 className="mt-5 text-4xl font-light text-white">
-                Crescimento planejado e bairros em expansão
-              </h2>
+              {/* Badge */}
+              <div className="absolute left-7 top-7 rounded-full bg-yellow-500 px-5 py-2 text-xs font-bold uppercase tracking-[0.35em] text-black shadow-lg">
+                Campina Grande
+              </div>
 
-              <p className="mt-6 text-zinc-400 leading-8">
-                Campina Grande possui regiões com forte crescimento
-                imobiliário, excelente mobilidade urbana e acesso aos
-                principais centros comerciais, universidades e hospitais.
-                Investir hoje significa aproveitar o potencial de
-                valorização dos próximos anos.
-              </p>
             </div>
 
           </div>
 
         </div>
-      </section>
+
+        {/* TEXTO */}
+        <div className="max-w-xl mx-auto lg:mx-0">
+
+          <span className="uppercase tracking-[0.35em] text-xs text-yellow-400">
+            LOCALIZAÇÃO ESTRATÉGICA
+          </span>
+
+          <h2 className="mt-6 text-4xl lg:text-6xl leading-tight font-light text-white">
+            Crescimento planejado e
+            <span className="block text-yellow-400 font-medium">
+              bairros em expansão
+            </span>
+          </h2>
+
+          <p className="mt-8 text-lg leading-9 text-zinc-400">
+            Campina Grande é um dos principais polos tecnológicos e
+            universitários do Nordeste. Com infraestrutura consolidada,
+            bairros em constante expansão e excelente qualidade de vida,
+            a cidade reúne fatores que impulsionam a valorização dos
+            empreendimentos e oferecem segurança para quem deseja morar
+            ou investir.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
       {/* FILTROS */}
       <section className="pb-12">
@@ -234,7 +276,7 @@ export default function CampinaGrande() {
               target="_blank"
               rel="noopener noreferrer"
               className="mt-8 inline-flex rounded-full bg-yellow-500 px-8 py-4 font-semibold text-black hover:scale-105 transition"
-            >
+            >f
               Agendar Atendimento
             </a>
 

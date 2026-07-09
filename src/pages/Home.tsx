@@ -9,6 +9,7 @@ import CTA from "../components/CTA";
 import Footer from "../components/Footer";
 import WhatsAppButton from "../components/WhatsAppButton";
 import WhyChooseEdgar from "../components/WhyChooseEdgar";
+import InvestmentStrategy from "../components/InvestmentStrategy";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Marquee />
       <About />
       <PresenceSection />
+      <InvestmentStrategy />
       <Cities />
       <Differentials />
       <WhyChooseEdgar />

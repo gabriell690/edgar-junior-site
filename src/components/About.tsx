@@ -27,7 +27,7 @@ max-w-137.5
 "
 >
   <img
-    src="/edgar1.jpg"
+    src="/edgar5.jpg"
     alt="Edgar Junior"
     className="w-full object-cover"
   />
