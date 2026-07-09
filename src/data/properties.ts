@@ -12,6 +12,22 @@ export interface Property {
 
 export const properties: Property[] = [
   {
+    slug: "Elo Beach",
+    name: "Elo Beach",
+    neighborhood: "Bessa - João Pessoa/PB",
+    location: "Bessa - João Pessoa/PB",
+    price: "A partir de R$360.000,00",
+    delivery: " Dezembro de 2027",
+    description: "1, 2 e 3 Quartos",
+    cover:"/empreendimentos/Bessa/beach-class/capa.webp",
+    images: ["/empreendimentos/Bessa/beach-class/1.webp",
+             "/empreendimentos/Bessa/beach-class/2.webp",
+             "/empreendimentos/Bessa/beach-class/3.webp",
+             "/empreendimentos/Bessa/beach-class/4.webp",
+             "/empreendimentos/Bessa/beach-class/5.webp",
+             "/empreendimentos/Bessa/beach-class/6.webp",],
+  },
+  {
     slug: "Beach Class",
     name: "Beach Class",
     neighborhood: "Bessa - João Pessoa/PB",
