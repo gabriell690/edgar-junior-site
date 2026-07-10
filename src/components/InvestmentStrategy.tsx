@@ -1,7 +1,7 @@
 
 export default function InvestmentStrategy() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-zinc-950 via-black to-zinc-950 py-28">
+    <section className="relative overflow-hidden bg-linear-to-b from-zinc-950 via-black to-zinc-950 py-28">
 
       {/* Glow */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(234,179,8,0.06),transparent_70%)]" />
@@ -61,7 +61,7 @@ xl:gap-24
 
           <div className="flex justify-center">
 
-            <div className="relative group w-full max-w-[520px]">
+            <div className="relative group w-full max-w-130">
 
               <div className="absolute -inset-4 rounded-[36px] bg-yellow-500/10 blur-3xl opacity-0 transition duration-700 group-hover:opacity-100"></div>
 
@@ -74,7 +74,7 @@ xl:gap-24
                 <img
                   src="/edgar4.jpg"
                   alt="Consultoria Imobiliária"
-                  className="h-[620px] w-full rounded-[22px] object-cover transition duration-700 group-hover:scale-105"
+                  className="h-155 w-full rounded-[22px] object-cover transition duration-700 group-hover:scale-105"
                 />
 
               </div>

@@ -66,7 +66,7 @@ ${form.observacoes}`;
       {/* HERO */}
 
       <section className="relative pt-40 pb-24 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-yellow-500/10 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-b from-yellow-500/10 via-transparent to-transparent" />
 
         <div className="container-edgar relative z-10 max-w-4xl mx-auto text-center">
 
