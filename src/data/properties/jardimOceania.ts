@@ -1,0 +1,38 @@
+import type { Property } from "../../types/Property";
+
+export const jardimOceania: Property[] = [
+ {
+    slug: "Vila do Mar",
+    name: "Vila do Mar",
+    neighborhood: "Jardim Oceania",
+    location: "Jardim Oceania - João Pessoa/PB",
+    price: "A partir de R$2.660.000,00",
+    delivery: "Julho de 2031",
+    description: "4 Quartos / Beira-Mar",
+    cover: "/empreendimentos/jardim-oceania/viladomar/capa.webp",
+    images: ["/empreendimentos/jardim-oceania/viladomar/1.webp",
+             "/empreendimentos/jardim-oceania/viladomar/2.webp",
+             "/empreendimentos/jardim-oceania/viladomar/3.webp",
+             "/empreendimentos/jardim-oceania/viladomar/4.webp",
+             "/empreendimentos/jardim-oceania/viladomar/5.webp",
+             "/empreendimentos/jardim-oceania/viladomar/6.webp",
+    ],
+  },
+  {
+    slug: "Get Running",
+    name: "Get Running",
+    neighborhood: "Jardim Oceania",
+    location: "Jardim Oceania - João Pessoa/PB",
+    price: "A partir de R$374.000,00",
+    delivery: "Dezembro de 2028",
+    description: "Flats",
+    cover: "/empreendimentos/jardim-oceania/get-running/capa.webp",
+    images: ["/empreendimentos/jardim-oceania/get-running/1.webp",
+             "/empreendimentos/jardim-oceania/get-running/2.webp",
+             "/empreendimentos/jardim-oceania/get-running/3.webp",
+             "/empreendimentos/jardim-oceania/get-running/4.webp",
+             "/empreendimentos/jardim-oceania/get-running/5.webp",
+             "/empreendimentos/jardim-oceania/get-running/6.webp",
+    ],
+  },
+]
