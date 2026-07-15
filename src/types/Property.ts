@@ -5,7 +5,8 @@ export interface Property {
   location: string;
   price: string;
   delivery: string;
+  category?: string;
   description: string;
   cover: string;
-  images: string[];
+ images: string[];
 }

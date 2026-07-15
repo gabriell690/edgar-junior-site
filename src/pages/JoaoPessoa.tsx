@@ -1,6 +1,10 @@
 import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
-
+import {
+  MapPin,
+  Calendar,
+  BadgeDollarSign,
+} from "lucide-react";
 import Layout from "../components/Layout";
 import { properties } from "../data/properties";
 
@@ -211,17 +215,24 @@ export default function JoaoPessoa() {
                     {property.name}
                   </h2>
 
-                  <p className="mt-4 text-zinc-400">
-                    📍 {property.location}
-                  </p>
+                 <div className="mt-5 space-y-3">
 
-                  <p className="mt-4 text-lg font-semibold text-yellow-400">
-                    {property.price}
-                  </p>
+  <div className="flex items-center gap-2 text-zinc-400">
+    <MapPin size={16} className="text-yellow-500 flex-shrink-0" />
+    <span>{property.location}</span>
+  </div>
 
-                  <p className="mt-2 text-zinc-500">
-                    {property.delivery}
-                  </p>
+  <div className="flex items-center gap-2 text-lg font-semibold text-yellow-400">
+    <BadgeDollarSign size={18} className="text-yellow-500 flex-shrink-0" />
+    <span>{property.price}</span>
+  </div>
+
+  <div className="flex items-center gap-2 text-zinc-500">
+    <Calendar size={16} className="text-yellow-500 flex-shrink-0" />
+    <span>{property.delivery}</span>
+  </div>
+
+</div>
 
                   <Link
                     to={`/lancamentos/${property.slug}`}

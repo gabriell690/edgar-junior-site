@@ -21,7 +21,7 @@
     "cheerio": "^1.2.0",
     "framer-motion": "^12.40.0",
     "fs-extra": "^11.3.6",
-    "lucide-react": "^1.18.0",
+    "lucide-react": "^1.24.0",
     "pdf-poppler": "^0.2.3",
     "pdf-to-img": "^6.2.0",
     "pdfjs-dist": "^4.10.38",
