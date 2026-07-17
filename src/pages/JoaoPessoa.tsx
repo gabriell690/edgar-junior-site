@@ -218,17 +218,17 @@ export default function JoaoPessoa() {
                  <div className="mt-5 space-y-3">
 
   <div className="flex items-center gap-2 text-zinc-400">
-    <MapPin size={16} className="text-yellow-500 flex-shrink-0" />
+    <MapPin size={16} className="text-yellow-500 shrink-0" />
     <span>{property.location}</span>
   </div>
 
   <div className="flex items-center gap-2 text-lg font-semibold text-yellow-400">
-    <BadgeDollarSign size={18} className="text-yellow-500 flex-shrink-0" />
+    <BadgeDollarSign size={18} className="text-yellow-500 shrink-0" />
     <span>{property.price}</span>
   </div>
 
   <div className="flex items-center gap-2 text-zinc-500">
-    <Calendar size={16} className="text-yellow-500 flex-shrink-0" />
+    <Calendar size={16} className="text-yellow-500 shrink-0" />
     <span>{property.delivery}</span>
   </div>
 

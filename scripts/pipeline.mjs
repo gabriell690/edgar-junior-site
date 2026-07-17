@@ -7,7 +7,7 @@ import { criarEstrutura } from "./filesystem/criarEstrutura.mjs";
 
 import { converterPdf } from "./pdf/converterPdf.mjs";
 
-import { criarPropertyJson } from "./generator/criarPropertyJson.mjs";
+import { criarPropertyJson } from "./generator/gerarProperties.mjs";
 
 
 
