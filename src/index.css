@@ -89,3 +89,418 @@ body {
   }
 
 }
+/* =======================================================
+   MARKET TICKER PREMIUM
+======================================================= */
+
+.market-section{
+    position: relative;
+    overflow: hidden;
+
+    padding: 32px 0;
+
+    background: #050505;
+
+    border-top: 1px solid rgba(255,193,7,.15);
+    border-bottom: 1px solid rgba(255,255,255,.05);
+}
+/* Iluminação */
+
+.market-section::before{
+    content:"";
+
+    position:absolute;
+
+    width:900px;
+    height:350px;
+
+    left:50%;
+    top:-220px;
+
+    transform:translateX(-50%);
+
+    border-radius:50%;
+
+    background:rgba(255,193,7,.05);
+
+    filter:blur(140px);
+
+    pointer-events:none;
+}
+.market-section::after{
+    content:"";
+
+    position:absolute;
+    inset:0;
+
+    background:
+        radial-gradient(
+            circle at bottom center,
+            rgba(37,99,235,.06),
+            transparent 65%
+        );
+
+    pointer-events:none;
+}
+
+
+/* =======================================================
+   CABEÇALHO
+======================================================= */
+
+.market-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:28px;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.market-location{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:#FFC107;
+
+    text-transform:uppercase;
+
+    letter-spacing:.18em;
+
+    font-size:.75rem;
+
+    font-weight:700;
+
+}
+
+.market-title{
+
+    color:#FFF;
+
+    font-size:2rem;
+
+    font-weight:700;
+
+    margin-top:8px;
+
+    margin-bottom:6px;
+
+}
+
+.market-subtitle{
+
+    color:#94A3B8;
+
+    font-size:.95rem;
+
+}
+
+
+/* =======================================================
+   RELÓGIO
+======================================================= */
+
+.market-live{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    box-shadow:
+        0 10px 35px rgba(0,0,0,.30);
+
+}
+
+.live-badge{
+
+    background:rgba(34,197,94,.18);
+
+    color:#4ADE80;
+
+    padding:6px 14px;
+
+    border-radius:999px;
+
+    font-size:.72rem;
+
+    font-weight:700;
+
+    letter-spacing:.08em;
+
+    text-transform:uppercase;
+
+}
+
+.market-clock{
+
+    color:#FFF;
+
+    font-weight:700;
+
+    font-family:monospace;
+
+}
+
+
+/* =======================================================
+   TICKER
+======================================================= */
+
+.ticker-wrapper{
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+.ticker{
+
+    display:flex;
+
+    gap:20px;
+
+    width:max-content;
+
+    animation:marketTicker 34s linear infinite;
+
+}
+
+.ticker:hover{
+
+    animation-play-state:paused;
+
+}
+
+
+/* =======================================================
+   CARDS
+======================================================= */
+.market-card{
+    background:#111827;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    border-radius:22px;
+
+    transition:.35s;
+}
+
+.market-card:hover{
+    background:#182233;
+
+    border-color:#FFC107;
+
+    transform:translateY(-8px);
+}
+
+
+/* =======================================================
+   ÍCONE
+======================================================= */
+
+.market-icon{
+
+    width:56px;
+    height:56px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:
+
+        linear-gradient(
+
+            145deg,
+
+            rgba(255,193,7,.18),
+
+            rgba(255,193,7,.05)
+
+        );
+
+    border:1px solid rgba(255,193,7,.18);
+
+    color:#FFC107;
+
+    margin-bottom:18px;
+
+}
+
+
+/* =======================================================
+   TEXTOS
+======================================================= */
+
+.market-name{
+
+    color:#94A3B8;
+
+    text-transform:uppercase;
+
+    letter-spacing:.08em;
+
+    font-size:.72rem;
+
+    margin-bottom:6px;
+
+}
+
+.market-value{
+
+    color:#FFF;
+
+    font-size:1.7rem;
+
+    font-weight:700;
+
+    line-height:1;
+
+}
+
+.market-info{
+
+    margin-top:10px;
+
+    color:#CBD5E1;
+
+    font-size:.9rem;
+
+}
+
+
+/* =======================================================
+   SOMBRAS LATERAIS
+======================================================= */
+
+.fade-left,
+.fade-right{
+
+    position:absolute;
+
+    top:0;
+
+    width:120px;
+
+    height:100%;
+
+    z-index:5;
+
+    pointer-events:none;
+
+}
+
+.fade-left{
+
+    left:0;
+
+    background:
+    linear-gradient(
+        90deg,
+        #081321,
+        transparent
+    );
+
+}
+
+.fade-right{
+
+    right:0;
+
+    background:
+    linear-gradient(
+        -90deg,
+        #081321,
+        transparent
+    );
+
+}
+
+
+/* =======================================================
+   ANIMAÇÃO
+======================================================= */
+
+@keyframes marketTicker{
+
+    from{
+
+        transform:translateX(0);
+
+    }
+
+    to{
+
+        transform:translateX(-50%);
+
+    }
+
+}
+
+
+/* =======================================================
+   RESPONSIVO
+======================================================= */
+
+@media(max-width:768px){
+
+    .market-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .market-title{
+
+        font-size:1.5rem;
+
+    }
+
+    .market-card{
+
+        width:220px;
+        min-width:220px;
+
+        padding:18px;
+
+    }
+
+    .market-value{
+
+        font-size:1.4rem;
+
+    }
+
+}

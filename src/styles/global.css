@@ -45,3 +45,158 @@ body,
 .animate-float {
   animation: float 3s ease-in-out infinite;
 }
+/* =========================================================
+   RADAR DO MERCADO
+========================================================= */
+
+.ticker-track{
+    display:flex;
+    align-items:center;
+    width:max-content;
+    animation:marketTicker 75s linear infinite;
+}
+
+.ticker-track:hover{
+    animation-play-state:paused;
+}
+
+.ticker-modern-item{
+
+    display:flex;
+    align-items:center;
+    gap:18px;
+
+    padding:18px 34px;
+
+    position:relative;
+
+    transition:
+        transform .35s ease,
+        background .35s ease;
+
+}
+
+.ticker-modern-item::after{
+
+    content:"";
+
+    position:absolute;
+
+    right:0;
+
+    width:1px;
+
+    height:42px;
+
+    background:rgba(255,255,255,.08);
+
+}
+
+.ticker-modern-item:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.fade-left{
+
+    position:absolute;
+
+    left:0;
+    top:0;
+
+    width:120px;
+    height:100%;
+
+    background:linear-gradient(
+        to right,
+        #080808,
+        rgba(8,8,8,.8),
+        transparent
+    );
+
+    z-index:5;
+
+}
+
+.fade-right{
+
+    position:absolute;
+
+    right:0;
+    top:0;
+
+    width:120px;
+    height:100%;
+
+    background:linear-gradient(
+        to left,
+        #080808,
+        rgba(8,8,8,.8),
+        transparent
+    );
+
+    z-index:5;
+
+}
+
+@keyframes marketTicker{
+
+    from{
+
+        transform:translateX(0);
+
+    }
+
+    to{
+
+        transform:translateX(-50%);
+
+    }
+
+}
+
+/* Glow dos ícones */
+
+.ticker-modern-item svg{
+
+    transition:.35s;
+
+}
+
+.ticker-modern-item:hover svg{
+
+    color:#facc15;
+
+    filter:
+        drop-shadow(0 0 10px rgba(250,204,21,.45));
+
+}
+
+/* Valor */
+
+.ticker-modern-item span:first-of-type{
+
+    letter-spacing:.5px;
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .ticker-track{
+
+        animation-duration:45s;
+
+    }
+
+    .ticker-modern-item{
+
+        padding:14px 24px;
+
+        gap:14px;
+
+    }
+
+}

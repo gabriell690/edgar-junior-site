@@ -1,12 +1,15 @@
 import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
-
+import PropertyFilters from "../components/joaopessoa/PropertyFilters";
 import Layout from "../components/Layout";
 import { properties } from "../data/properties";
+import MarketTickerCG from "../components/market/MarketTickerCG";
 
 export default function CampinaGrande() {
   const [tipo, setTipo] = useState("Todos");
   const [bairroSelecionado, setBairroSelecionado] = useState("Todos");
+const [busca, setBusca] = useState("");
+const [categoria, setCategoria] = useState("Todos");
 
   const campinaProperties = useMemo(
     () =>
@@ -72,8 +75,7 @@ export default function CampinaGrande() {
           </div>
         </div>
       </section>
-
-      {/* MAPA */}
+<MarketTickerCG />
      {/* MAPA */}
 <section className="pb-32">
 
@@ -153,47 +155,17 @@ export default function CampinaGrande() {
 </section>
 
       {/* FILTROS */}
-      <section className="pb-12">
-        <div className="container-edgar">
-
-          <div className="flex flex-wrap justify-center gap-3 mb-8">
-
-            {["Todos", "Lançamentos", "Prontos"].map((item) => (
-              <button
-                key={item}
-                onClick={() => setTipo(item)}
-                className={`px-6 py-3 rounded-full transition ${
-                  tipo === item
-                    ? "bg-yellow-500 text-black"
-                    : "bg-white/5 border border-white/10 text-white"
-                }`}
-              >
-                {item}
-              </button>
-            ))}
-
-          </div>
-
-          <div className="flex flex-wrap justify-center gap-3">
-
-            {bairros.map((bairro) => (
-              <button
-                key={bairro}
-                onClick={() => setBairroSelecionado(bairro)}
-                className={`px-6 py-3 rounded-full transition ${
-                  bairroSelecionado === bairro
-                    ? "bg-yellow-500 text-black"
-                    : "bg-white/5 border border-white/10 text-white"
-                }`}
-              >
-                {bairro}
-              </button>
-            ))}
-
-          </div>
-
-        </div>
-      </section>
+       <PropertyFilters
+        bairros={bairros}
+        busca={busca}
+        setBusca={setBusca}
+        bairroSelecionado={bairroSelecionado}
+        setBairroSelecionado={setBairroSelecionado}
+        categoria={categoria}
+        setCategoria={setCategoria}
+        tipo={tipo}
+        setTipo={setTipo}
+      />
 
       {/* IMÓVEIS */}
       <section className="pb-28">
