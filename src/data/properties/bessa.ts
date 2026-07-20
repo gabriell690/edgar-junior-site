@@ -134,7 +134,7 @@ export const bessa: Property[] = [
     name: "Firenze da Vinci",
     neighborhood: "Bessa",
     location: "Bessa - João Pessoa/PB",
-    price: "00",
+    price: " R$439.000,00",
     delivery: "Dezembro de 2026",
     category: "flats, 1 e 2 Quartos",
     description: "",
