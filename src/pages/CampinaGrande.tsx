@@ -11,6 +11,7 @@ export default function CampinaGrande() {
 const [busca, setBusca] = useState("");
 const [categoria, setCategoria] = useState("Todos");
 
+
   const campinaProperties = useMemo(
     () =>
       properties.filter((property) =>
@@ -42,6 +43,19 @@ const [categoria, setCategoria] = useState("Todos");
 
     return bairro && categoria;
   });
+  const categorias = useMemo(() => {
+  return [
+    "Todos",
+    ...Array.from(
+      new Set(
+        campinaProperties
+          .map((p) => p.category)
+          .filter((category): category is string => Boolean(category))
+          .map((category) => category.trim())
+      )
+    ).sort((a, b) => a.localeCompare(b, "pt-BR")),
+  ];
+}, [campinaProperties]);
 
   return (
     <Layout>
@@ -156,16 +170,18 @@ const [categoria, setCategoria] = useState("Todos");
 
       {/* FILTROS */}
        <PropertyFilters
-        bairros={bairros}
-        busca={busca}
-        setBusca={setBusca}
-        bairroSelecionado={bairroSelecionado}
-        setBairroSelecionado={setBairroSelecionado}
-        categoria={categoria}
-        setCategoria={setCategoria}
-        tipo={tipo}
-        setTipo={setTipo}
-      />
+               bairros={bairros}
+               categorias={categorias}
+               busca={busca}
+               setBusca={setBusca}
+               bairroSelecionado={bairroSelecionado}
+               setBairroSelecionado={setBairroSelecionado}
+               categoria={categoria}
+               setCategoria={setCategoria}
+               tipo={tipo}
+               setTipo={setTipo}
+               totalResultados={filteredProperties.length}
+             />
 
       {/* IMÓVEIS */}
       <section className="pb-28">
