@@ -4,6 +4,7 @@ import Home from "../pages/Home";
 import JoaoPessoa from "../pages/JoaoPessoa";
 import CampinaGrande from "../pages/CampinaGrande";
 import ConsultoriaImobiliaria from "../pages/ConsultoriaImobiliaria";
+import MapEditor from "../components/InteractiveMap/MapEditor";
 
 export default function Router() {
   return (
@@ -30,6 +31,10 @@ export default function Router() {
     path="/lancamentos/:slug"
     element={<Property />}
   />
+<Route
+  path="/dev/map-editor"
+  element={<MapEditor />}
+/>
 
 </Routes>
   );

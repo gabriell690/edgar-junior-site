@@ -40,7 +40,7 @@ export default function PropertyCard({ property }: Props) {
           src={property.cover}
           alt={property.name}
           className="
-          h-80
+          h-60
           w-full
           object-cover
           duration-700
@@ -79,8 +79,8 @@ export default function PropertyCard({ property }: Props) {
           right-5
           top-5
           flex
-          h-11
-          w-11
+          h-10
+          w-10
           items-center
           justify-center
           rounded-full
@@ -104,7 +104,7 @@ export default function PropertyCard({ property }: Props) {
 
       {/* CONTEÚDO */}
 
-      <div className="p-7">
+      <div className="p-5">
 
         <p
           className="
@@ -119,8 +119,8 @@ export default function PropertyCard({ property }: Props) {
 
         <h2
           className="
-          mt-3
-          text-3xl
+          mt-2
+          text-2xl
           font-semibold
           text-white
           "
@@ -148,7 +148,7 @@ export default function PropertyCard({ property }: Props) {
 
         {/* LINHA */}
 
-        <div className="my-7 border-t border-zinc-800" />
+        <div className="my-5 border-t border-zinc-800" />
 
         {/* PREÇO */}
 
@@ -162,8 +162,8 @@ export default function PropertyCard({ property }: Props) {
 
           <h3
             className="
-            mt-2
-            text-4xl
+            mt-1
+            text-3xl
             font-bold
             text-yellow-400
             "
@@ -177,7 +177,7 @@ export default function PropertyCard({ property }: Props) {
 
         <div
           className="
-          mt-7
+          mt-5
           flex
           items-center
           gap-3
@@ -213,14 +213,14 @@ export default function PropertyCard({ property }: Props) {
         <Link
           to={`/lancamentos/${property.slug}`}
           className="
-          mt-8
+          mt-6
           flex
           items-center
           justify-center
           gap-3
-          rounded-2xl
+          rounded-xl
           bg-yellow-500
-          py-4
+          py-3
           font-semibold
           text-black
           transition

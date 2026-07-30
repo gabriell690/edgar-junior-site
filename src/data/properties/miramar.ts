@@ -1,1 +1,40 @@
-export const miramar = [];
+import type { Property } from "../../types/Property";
+
+export const miramar: Property[] = [
+      {
+    slug: "Concept",
+    name: "Concept",
+    neighborhood: "Miramar",
+    location: "Miramar - João Pessoa/PB",
+    price: " R$366.000,00",
+    delivery: "Fevereiro de 2027",
+    category: "flats e 1 Quarto",
+    description: "",
+    cover: "/empreendimentos/miramar/concept/capa.webp",
+    images: ["/empreendimentos/miramar/concept/1.webp",
+             "/empreendimentos/miramar/concept/2.webp",
+             "/empreendimentos/miramar/concept/3.webp",
+             "/empreendimentos/miramar/concept/4.webp",
+             "/empreendimentos/miramar/concept/5.webp",
+             "/empreendimentos/miramar/concept/6.webp",
+    ],
+  },
+   {
+    slug: "Essence Ruy Carneiro",
+    name: "Essence Ruy Carneiro",
+    neighborhood: "Miramar",
+    location: "Miramar - João Pessoa/PB",
+    price: " R$704.000,00",
+    delivery: "Julho de 2028",
+    category: "1,2 e 3 Quartos",
+    description: "",
+    cover: "/empreendimentos/miramar/essence/capa.webp",
+    images: ["/empreendimentos/miramar/essence/1.webp",
+             "/empreendimentos/miramar/essence/2.webp",
+             "/empreendimentos/miramar/essence/3.webp",
+             "/empreendimentos/miramar/essence/4.webp",
+             "/empreendimentos/miramar/essence/5.webp",
+             "/empreendimentos/miramar/essence/6.webp",
+    ],
+  },
+]

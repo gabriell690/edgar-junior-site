@@ -1,7 +1,15 @@
-import { Search, MapPin, Building2, Building } from "lucide-react";
+import {
+  Search,
+  MapPin,
+  Building2,
+  Building,
+  RotateCcw,
+  Home,
+} from "lucide-react";
 
 interface Props {
   bairros: string[];
+  categorias: string[];
 
   busca: string;
   setBusca: (value: string) => void;
@@ -14,10 +22,13 @@ interface Props {
 
   tipo: string;
   setTipo: (tipo: string) => void;
+
+  totalResultados: number;
 }
 
 export default function PropertyFilters({
   bairros,
+  categorias,
   busca,
   setBusca,
   bairroSelecionado,
@@ -26,107 +37,279 @@ export default function PropertyFilters({
   setCategoria,
   tipo,
   setTipo,
+  totalResultados,
 }: Props) {
+  function limparFiltros() {
+    setBusca("");
+    setBairroSelecionado("Todos");
+    setCategoria("Todos");
+    setTipo("Todos");
+  }
+
   return (
-    <section className="px-5 pb-16">
-      <div className="mx-auto max-w-6xl rounded-3xl border border-zinc-800 bg-zinc-900/90 p-8 shadow-2xl backdrop-blur-xl">
+    <aside
+      className="
+        sticky
+        top-24
+        rounded-3xl
+        border
+        border-zinc-800
+        bg-[#101010]
+        p-7
+        shadow-2xl
+      "
+    >
+      {/* Cabeçalho */}
 
-        {/* Título */}
+      <div className="mb-8">
 
-        <div className="mb-8 text-center">
-          <p className="text-xs uppercase tracking-[0.35em] text-yellow-500">
-            Pesquisa Inteligente
-          </p>
+        <span className="text-xs uppercase tracking-[0.35em] text-yellow-500">
+          Pesquisa Inteligente
+        </span>
 
-          <h2 className="mt-3 text-3xl font-light text-white">
-            Encontre o imóvel ideal
-          </h2>
+        <h2 className="mt-2 text-2xl font-bold text-white">
+          Encontre seu imóvel
+        </h2>
 
-          <p className="mt-2 text-sm text-zinc-400">
-            Utilize os filtros para encontrar o empreendimento perfeito.
-          </p>
-        </div>
+        <p className="mt-3 text-sm text-zinc-400 leading-relaxed">
+          Pesquise por nome, bairro, localização ou categoria.
+        </p>
 
-        {/* Busca */}
+      </div>
 
-        <div className="relative mb-8">
-          <Search size={20} className="text-yellow-500" />
+      {/* Busca */}
 
-          <input
-            type="text"
-            placeholder="Buscar empreendimento..."
-            value={busca}
-            onChange={(e) => setBusca(e.target.value)}
-            className="w-full rounded-2xl border border-zinc-700 bg-[#161616] py-4 pl-14 pr-5 text-white outline-none transition focus:border-yellow-500"
+      <div className="mb-7">
+
+        <label className="mb-2 flex items-center gap-2 text-sm text-zinc-400">
+
+          <Search
+            size={16}
+            className="text-yellow-500"
           />
-        </div>
 
-        {/* Filtros */}
+          Buscar
 
-        <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+        </label>
 
-          {/* Bairro */}
+        <input
+          type="text"
+          value={busca}
+          onChange={(e) => setBusca(e.target.value)}
+          placeholder="Ex.: Miramar, Zion..."
+          className="
+            w-full
+            rounded-xl
+            border
+            border-zinc-700
+            bg-zinc-900
+            px-4
+            py-3
+            text-white
+            placeholder:text-zinc-500
+            outline-none
+            transition
+            focus:border-yellow-500
+          "
+        />
+
+      </div>
+
+      {/* Bairro */}
+
+      <div className="mb-6">
+
+        <label className="mb-2 flex items-center gap-2 text-sm text-zinc-400">
+
+          <MapPin
+            size={16}
+            className="text-yellow-500"
+          />
+
+          Bairro
+
+        </label>
+
+        <select
+          value={bairroSelecionado}
+          onChange={(e) => setBairroSelecionado(e.target.value)}
+          className="
+            w-full
+            rounded-xl
+            border
+            border-zinc-700
+            bg-zinc-900
+            px-4
+            py-3
+            text-white
+            outline-none
+            transition
+            focus:border-yellow-500
+          "
+        >
+          {bairros.map((bairro) => (
+            <option
+              key={bairro}
+              value={bairro}
+            >
+              {bairro}
+            </option>
+          ))}
+        </select>
+
+      </div>
+
+      {/* Categoria */}
+
+      <div className="mb-6">
+
+        <label className="mb-2 flex items-center gap-2 text-sm text-zinc-400">
+
+          <Building2
+            size={16}
+            className="text-yellow-500"
+          />
+
+          Categoria
+
+        </label>
+
+        <select
+          value={categoria}
+          onChange={(e) => setCategoria(e.target.value)}
+          className="
+            w-full
+            rounded-xl
+            border
+            border-zinc-700
+            bg-zinc-900
+            px-4
+            py-3
+            text-white
+            outline-none
+            transition
+            focus:border-yellow-500
+          "
+        >
+          {categorias.map((item) => (
+            <option
+              key={item}
+              value={item}
+            >
+              {item}
+            </option>
+          ))}
+        </select>
+
+      </div>
+
+      {/* Status */}
+
+      <div className="mb-8">
+
+        <label className="mb-2 flex items-center gap-2 text-sm text-zinc-400">
+
+          <Building
+            size={16}
+            className="text-yellow-500"
+          />
+
+          Status
+
+        </label>
+
+        <select
+          value={tipo}
+          onChange={(e) => setTipo(e.target.value)}
+          className="
+            w-full
+            rounded-xl
+            border
+            border-zinc-700
+            bg-zinc-900
+            px-4
+            py-3
+            text-white
+            outline-none
+            transition
+            focus:border-yellow-500
+          "
+        >
+          <option value="Todos">
+            Todos
+          </option>
+
+          <option value="Lançamentos">
+            Lançamentos
+          </option>
+
+          <option value="Prontos">
+            Prontos
+          </option>
+        </select>
+
+      </div>
+
+      {/* Resultado */}
+
+      <div className="mb-8 rounded-2xl bg-zinc-900 p-5">
+
+        <div className="flex items-center gap-3">
+
+          <Home
+            className="text-yellow-500"
+            size={20}
+          />
 
           <div>
-            <label className="mb-2 flex items-center gap-2 text-sm text-zinc-400">
-              <MapPin size={16} className="text-yellow-500" />
-              Bairro
-            </label>
 
-            <select
-              value={bairroSelecionado}
-              onChange={(e) => setBairroSelecionado(e.target.value)}
-              className="w-full rounded-2xl border border-zinc-700 bg-[#161616] px-5 py-4 text-white outline-none transition focus:border-yellow-500"
-            >
-              {bairros.map((bairro) => (
-                <option key={bairro} value={bairro}>
-                  {bairro}
-                </option>
-              ))}
-            </select>
-          </div>
+            <p className="text-xs uppercase tracking-wider text-zinc-500">
+              Resultado
+            </p>
 
-          {/* Categoria */}
+            <p className="text-xl font-bold text-white">
+              {totalResultados}
+            </p>
 
-          <div>
-            <label className="mb-2 flex items-center gap-2 text-sm text-zinc-400">
-              <Building2 size={16} className="text-yellow-500" />
-              Categoria
-            </label>
+            <span className="text-sm text-zinc-400">
+              empreendimentos encontrados
+            </span>
 
-            <select
-              value={categoria}
-              onChange={(e) => setCategoria(e.target.value)}
-              className="w-full rounded-2xl border border-zinc-700 bg-[#161616] px-5 py-4 text-white outline-none transition focus:border-yellow-500"
-            >
-              <option value="Todos">Todos</option>
-              <option value="Apartamento">Apartamento</option>
-              <option value="Flat">Flat</option>
-            </select>
-          </div>
-
-          {/* Status */}
-
-          <div>
-            <label className="mb-2 flex items-center gap-2 text-sm text-zinc-400">
-              <Building size={16} className="text-yellow-500" />
-              Status
-            </label>
-
-            <select
-              value={tipo}
-              onChange={(e) => setTipo(e.target.value)}
-              className="w-full rounded-2xl border border-zinc-700 bg-[#161616] px-5 py-4 text-white outline-none transition focus:border-yellow-500"
-            >
-              <option value="Todos">Todos</option>
-              <option value="Lançamentos">Lançamentos</option>
-              <option value="Prontos">Prontos</option>
-            </select>
           </div>
 
         </div>
 
       </div>
-    </section>
+
+      {/* Botão */}
+
+      <button
+        onClick={limparFiltros}
+        className="
+          flex
+          w-full
+          items-center
+          justify-center
+          gap-2
+          rounded-xl
+          border
+          border-yellow-500
+          py-3
+          font-semibold
+          text-yellow-500
+          transition-all
+          duration-300
+          hover:bg-yellow-500
+          hover:text-black
+        "
+      >
+
+        <RotateCcw size={18} />
+
+        Limpar filtros
+
+      </button>
+
+    </aside>
   );
 }

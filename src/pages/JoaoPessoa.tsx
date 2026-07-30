@@ -1,90 +1,161 @@
- 
 import { useMemo, useState } from "react";
+
 import Layout from "../components/Layout";
-import { properties } from "../data/properties";
-import MarketTickerJP from "../components/market/MarketTickerJP";
 import Hero from "../components/joaopessoa/HeroJoaoPessoa";
-import MapSection from "../components/joaopessoa/MapSection";
-import CTAJoaoPessoa from "../components/joaopessoa/CTAJoaoPessoa";
-import PropertyGrid from "../components/joaopessoa/PropertyGrid";
+import MarketTickerJP from "../components/market/MarketTickerJP";
+import InteractiveMap from "../components/InteractiveMap";
 import PropertyFilters from "../components/joaopessoa/PropertyFilters";
+import PropertyGrid from "../components/joaopessoa/PropertyGrid";
+import CTAJoaoPessoa from "../components/joaopessoa/CTAJoaoPessoa";
+
+import { properties } from "../data/properties";
+
+function normalize(text: string = "") {
+  return text
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .trim();
+}
 
 export default function JoaoPessoa() {
-
-  const [tipo, setTipo] = useState("Todos");
+  const [busca, setBusca] = useState("");
   const [bairroSelecionado, setBairroSelecionado] = useState("Todos");
-const [busca, setBusca] = useState("");
-const [categoria, setCategoria] = useState("Todos");
+  const [categoria, setCategoria] = useState("Todos");
+  const [tipo, setTipo] = useState("Todos");
 
-  const joaoPessoaProperties = useMemo(
-    () =>
-      properties.filter((property) =>
-        property.location.toLowerCase().includes("joão pessoa") ||
-        property.location.toLowerCase().includes("joao pessoa")
-      ),
-    []
-  );
+  // Todos os imóveis de João Pessoa
 
-  // 👇 ADICIONE AQUI
+  const joaoPessoaProperties = useMemo(() => {
+    return properties.filter((property) =>
+      normalize(property.location).includes("joao pessoa")
+    );
+  }, []);
 
-  
+  // Lista de bairros
 
-  // restante do código...
+  const bairros = useMemo(() => {
+    return [
+      "Todos",
+      ...Array.from(
+        new Set(
+          joaoPessoaProperties
+            .map((p) => p.neighborhood.trim())
+            .filter(Boolean)
+        ),
+      ).sort((a, b) => a.localeCompare(b, "pt-BR")),
+    ];
+  }, [joaoPessoaProperties]);
 
-  const bairros = [
+  // Lista de categorias
+
+  const categorias = useMemo<string[]>(() => {
+  return [
     "Todos",
-    ...new Set(joaoPessoaProperties.map((p) => p.neighborhood)),
+    ...Array.from(
+      new Set(
+        joaoPessoaProperties
+          .map((p) => p.category)
+          .filter((category): category is string => Boolean(category))
+          .map((category) => category.trim())
+      )
+    ).sort((a, b) => a.localeCompare(b, "pt-BR")),
   ];
+}, [joaoPessoaProperties]);
 
-  const filteredProperties = joaoPessoaProperties.filter((property) => {
-    const bairro =
-      bairroSelecionado === "Todos" ||
-      property.neighborhood === bairroSelecionado;
+  // Filtro inteligente
 
-      
-    const categoria =
-      tipo === "Todos"
-        ? true
-        : tipo === "Lançamentos"
-        ? property.delivery &&
-          property.delivery.toLowerCase() !== "pronto"
-        : property.delivery &&
-          property.delivery.toLowerCase() === "pronto";
+  const filteredProperties = useMemo(() => {
+    const termo = normalize(busca);
 
-    return bairro && categoria;
-  });
+    return joaoPessoaProperties.filter((property) => {
+      const searchableText = normalize(
+        [
+          property.name,
+          property.neighborhood,
+          property.location,
+          property.category,
+          property.builder,
+          property.description,
+          property.delivery,
+        ]
+          .filter(Boolean)
+          .join(" ")
+      );
 
+      const matchBusca =
+        termo === "" ||
+        searchableText.includes(termo);
+
+      const matchBairro =
+        bairroSelecionado === "Todos" ||
+        property.neighborhood === bairroSelecionado;
+
+      const matchCategoria =
+        categoria === "Todos" ||
+        property.category === categoria;
+
+      const pronto =
+        normalize(property.delivery) === "pronto";
+
+      const matchStatus =
+        tipo === "Todos" ||
+        (tipo === "Prontos" && pronto) ||
+        (tipo === "Lançamentos" && !pronto);
+
+      return (
+        matchBusca &&
+        matchBairro &&
+        matchCategoria &&
+        matchStatus
+      );
+    });
+  }, [
+    busca,
+    bairroSelecionado,
+    categoria,
+    tipo,
+    joaoPessoaProperties,
+  ]);
+ console.table(
+  filteredProperties.map((p, i) => ({
+    i,
+    slug: p.slug,
+    nome: p.name,
+  }))
+);
   return (
     <Layout>
-      
-      {/* HERO */}
+
       <Hero />
 
-     <MarketTickerJP  />
+      <MarketTickerJP />
 
-      {/* MAPA */}
-      <MapSection />
+      <InteractiveMap
+        selectedNeighborhood={bairroSelecionado}
+        onNeighborhoodSelect={setBairroSelecionado}
+      />
 
-      {/* FILTROS */}
-    <PropertyFilters
-  bairros={bairros}
-  busca={busca}
-  setBusca={setBusca}
-  bairroSelecionado={bairroSelecionado}
-  setBairroSelecionado={setBairroSelecionado}
-  categoria={categoria}
-  setCategoria={setCategoria}
-  tipo={tipo}
-  setTipo={setTipo}
-/>
+      <PropertyFilters
+        bairros={bairros}
+        categorias={categorias}
+        busca={busca}
+        setBusca={setBusca}
+        bairroSelecionado={bairroSelecionado}
+        setBairroSelecionado={setBairroSelecionado}
+        categoria={categoria}
+        setCategoria={setCategoria}
+        tipo={tipo}
+        setTipo={setTipo}
+        totalResultados={filteredProperties.length}
+      />
 
-      {/* IMÓVEIS */}
       <PropertyGrid
-  properties={filteredProperties}
-/>
+        properties={filteredProperties}
+      />
 
-      {/* CTA */}
       <CTAJoaoPessoa />
+
     </Layout>
   );
 }
