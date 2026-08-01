@@ -19,7 +19,7 @@ export const camboinha: Property[] = [
       "/empreendimentos/camboinha/lavie/6.webp",
     ],
   },
-    {
+   {
     slug: "Leme",
     name: "Leme",
     neighborhood: "Camboinha",

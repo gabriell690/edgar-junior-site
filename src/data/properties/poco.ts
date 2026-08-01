@@ -40,8 +40,8 @@ export const poco: Property[] = [
   {
     slug: "Setai Sailor",
     name: "Setai Sailor",
-    neighborhood: "Manaira",
-    location: "Manaira - João Pessoa/PB",
+    neighborhood: "Poço",
+    location: "Poço - João Pessoa/PB",
     price: " R$582.000,00",
     delivery: "Dezembro de 2028",
     category: "Flats (Beira-Mar)",
@@ -58,8 +58,8 @@ export const poco: Property[] = [
   {
     slug: "Kaleo",
     name: "Kaleo",
-    neighborhood: "Manaira",
-    location: "Manaira - João Pessoa/PB",
+    neighborhood: "Poço",
+    location: "Poço - João Pessoa/PB",
     price: " R$310.000,00",
     delivery: "Abril de 2027",
     category: "Flats",
