@@ -77,9 +77,9 @@ export default function AmbientMusic() {
     <>
       <audio
         ref={audioRef}
-        src="/audio/edgar-jazz.mp3"
+        src="/audio/edgar-jazz-web.mp3"
         loop
-        preload="auto"
+        preload="metadata"
       />
 
       <div
