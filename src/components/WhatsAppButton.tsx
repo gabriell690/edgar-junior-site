@@ -12,10 +12,9 @@ export default function WhatsAppButton() {
           w-20
           sm:w-24
           md:w-44
-          -mb-3
-          md:-mb-6
+          -mb-1
+          md:-mb-4
           drop-shadow-[0_0_30px_rgba(255,200,0,0.5)]
-          animate-float
           select-none
           pointer-events-none
         "
