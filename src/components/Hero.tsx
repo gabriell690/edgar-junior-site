@@ -98,18 +98,10 @@ return (
           lg:text-8xl
         "
         >
-          Encontre o imóvel ideal
+         Viva o melhor hoje e
 
           <span className="block font-bold text-yellow-400">
-            para o próximo
-          </span>
-
-          <span className="block font-bold text-yellow-400">
-            capítulo
-          </span>
-
-          <span className="block">
-            da sua história
+           Construa o seu futuro
           </span>
 
         </h1>
@@ -124,7 +116,7 @@ return (
           md:text-xl
         "
         >
-          Lançamentos exclusivos em Campina Grande e João Pessoa.
+          Imóveis para transformar conquistas em patrimônio, e liberdade.
         </p>
 
       </div>
@@ -202,7 +194,7 @@ return (
       >
 
         <Link
-          to="/lancamentos"
+          to="/joao-pessoa"
           className="
           rounded-full
           bg-yellow-500
@@ -215,7 +207,7 @@ return (
           hover:bg-yellow-400
         "
         >
-          Ver Lançamentos
+          Explorar Oportunidades
         </Link>
 
         <a
@@ -261,11 +253,30 @@ return (
         "
         >
           <div className="text-4xl font-bold text-white">
-            +100
+           VIVER
           </div>
 
           <div className="mt-2 text-zinc-400">
-            Clientes atendidos
+            Alto padrão para transformar o seu jeito de viver.
+          </div>
+
+        </div>
+        <div
+          className="
+          rounded-3xl
+          border border-white/10
+          bg-white/5
+          p-8
+          text-center
+          backdrop-blur-xl
+        "
+        >
+          <div className="text-4xl font-bold text-white">
+           INVESTIR
+          </div>
+
+          <div className="mt-2 text-zinc-400">
+            Oportunidades selecionadas com visão de valorização.
           </div>
 
         </div>
@@ -281,31 +292,11 @@ return (
         "
         >
           <div className="text-4xl font-bold text-white">
-            {properties.length}
+           PROSPERAR
           </div>
 
           <div className="mt-2 text-zinc-400">
-            Lançamentos
-          </div>
-
-        </div>
-
-        <div
-          className="
-          rounded-3xl
-          border border-white/10
-          bg-white/5
-          p-8
-          text-center
-          backdrop-blur-xl
-        "
-        >
-          <div className="text-4xl font-bold text-white">
-            PB
-          </div>
-
-          <div className="mt-2 text-zinc-400">
-            Campina Grande & João Pessoa
+            Patrimônio e renda para construir liberdade no futuro.
           </div>
 
         </div>

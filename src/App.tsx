@@ -1,7 +1,13 @@
 import Router from "./routes/Router";
+import AmbientMusic from "./components/AmbientMusic";
 
 function App() {
-  return <Router />;
+  return (
+    <>
+      <Router />
+      <AmbientMusic />
+    </>
+  );
 }
 
 export default App;

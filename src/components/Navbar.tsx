@@ -156,7 +156,7 @@ export default function Navbar() {
             </nav>
 
             <a
-              href="https://wa.me/5583999999999"
+              href="https://wa.me/5583996618063"
               target="_blank"
               rel="noopener noreferrer"
               className="
@@ -177,7 +177,7 @@ export default function Navbar() {
                 shadow-[0_0_30px_rgba(234,179,8,.25)]
               "
             >
-              Agendar Atendimento
+              Atendimento Exclusivo
             </a>
 
             <button
@@ -250,7 +250,7 @@ export default function Navbar() {
           ))}
 
           <a
-            href="https://wa.me/5583999999999"
+            href="https://wa.me/5583996618063"
             target="_blank"
             rel="noopener noreferrer"
             className="
@@ -263,7 +263,7 @@ export default function Navbar() {
               font-semibold
             "
           >
-            Agendar Atendimento
+            Atendimento Exclusivo
           </a>
         </div>
       </div>
