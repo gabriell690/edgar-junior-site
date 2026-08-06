@@ -46,8 +46,53 @@ const [categoria, setCategoria] = useState("Todos");
   });
 
   return (
-    <Layout>
+    
+      <Layout>
+      
+          {/* ========================================
+              SIDEBAR FIXA
+          ======================================== */}
+         <aside
+        className="
+          hidden lg:flex
+          fixed
+          left-0
+          top-16
+          bottom-0
+          z-40
+          w-70
+          flex-col
+          border-r
+          border-zinc-800/70
+          bg-[#0b0b0b]
+        "
+      >
+        <div
+          className="
+            flex-1
+            overflow-y-auto
+            px-5
+            py-5
+            scrollbar-thin
+          "
+        >
+          <PropertyFilters
+        bairros={bairros}
+        busca={busca}
+        setBusca={setBusca}
+        bairroSelecionado={bairroSelecionado}
+        setBairroSelecionado={setBairroSelecionado}
+        categoria={categoria}
+        setCategoria={setCategoria}
+        tipo={tipo}
+        setTipo={setTipo}
+        totalResultados={filteredProperties.length}
+      />
+        </div>
+      </aside>
+      
       {/* HERO */}
+      
       <section className="relative pt-40 pb-24 overflow-hidden">
         <div className="absolute inset-0 bg-linear-to-b from-yellow-500/10 via-transparent to-transparent" />
 
@@ -156,19 +201,6 @@ const [categoria, setCategoria] = useState("Todos");
 
 </section>
 
-      {/* FILTROS */}
-        <PropertyFilters
-         bairros={bairros}
-         busca={busca}
-         setBusca={setBusca}
-         bairroSelecionado={bairroSelecionado}
-         setBairroSelecionado={setBairroSelecionado}
-         categoria={categoria}
-         setCategoria={setCategoria}
-         tipo={tipo}
-         setTipo={setTipo}
-         totalResultados={filteredProperties.length}
-       />
 
       {/* IMÓVEIS */}
       <section className="pb-28">
