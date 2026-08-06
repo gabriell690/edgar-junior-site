@@ -2,7 +2,7 @@ import type { Property } from "../../types/Property";
 
 export const caboBranco: Property[] = [
   {
-    slug: "The Diamond",
+    slug: "the-diamond",
     name: "The Diamond",
     neighborhood: "Cabo Branco",
     location: "Cabo Branco - João Pessoa/PB",
@@ -20,7 +20,7 @@ export const caboBranco: Property[] = [
     ],
   },
     {
-    slug: "Uniq Stays",
+    slug: "uniq-stays",
     name: "Uniq Stays",
     neighborhood: "Cabo Branco",
     location: "Cabo Branco - João Pessoa/PB",
@@ -38,7 +38,7 @@ export const caboBranco: Property[] = [
     ],
   },
      {
-    slug: "Soleil",
+    slug: "soleil",
     name: "Soleil",
     neighborhood: "Cabo Branco",
     location: "Cabo Branco - João Pessoa/PB",
@@ -55,7 +55,7 @@ export const caboBranco: Property[] = [
       "/empreendimentos/cabo-branco/soleil/6.webp",
     ],
   }, {
-    slug: "Epic",
+    slug: "epic",
     name: "Epic",
     neighborhood: "Cabo Branco",
     location: "Cabo Branco - João Pessoa/PB",
@@ -72,7 +72,7 @@ export const caboBranco: Property[] = [
       "/empreendimentos/cabo-branco/epic/6.webp",
     ],
   }, {
-    slug: "Artsy",
+    slug: "artsy",
     name: "Artsy",
     neighborhood: "Cabo Branco",
     location: "Cabo Branco - João Pessoa/PB",
@@ -89,7 +89,7 @@ export const caboBranco: Property[] = [
       "/empreendimentos/cabo-branco/artsy/6.webp",
     ],
   }, {
-    slug: "Zênite Lumi",
+    slug: "zenite-lumi",
     name: "Zênite Lumi",
     neighborhood: "Cabo Branco",
     location: "Cabo Branco - João Pessoa/PB",
@@ -106,7 +106,7 @@ export const caboBranco: Property[] = [
       "/empreendimentos/cabo-branco/zenite/6.webp",
     ],
   },{
-    slug: "Chateu D Belli Residence",
+    slug: "chateu-d-belli-residence",
     name: "Chateu D Belli Residence",
     neighborhood: "Cabo Branco",
     location: "Cabo Branco - João Pessoa/PB",
@@ -123,7 +123,7 @@ export const caboBranco: Property[] = [
       "/empreendimentos/cabo-branco/artsy/6.webp",
     ],
   }, {
-    slug: "Artus Vivence",
+    slug: "artus-vivence",
     name: "Artus Vivence",
     neighborhood: "Cabo Branco",
     location: "Cabo Branco - João Pessoa/PB",
@@ -140,7 +140,7 @@ export const caboBranco: Property[] = [
       "/empreendimentos/cabo-branco/artus/6.webp",
     ],
   },{
-    slug: "SYNC",
+    slug: "sync",
     name: "SYNC",
     neighborhood: "Cabo Branco",
     location: "Cabo Branco - João Pessoa/PB",
@@ -153,7 +153,7 @@ export const caboBranco: Property[] = [
     ],
   },
   {
-    slug: "Botanic",
+    slug: "botanic",
     name: "Botanic",
     neighborhood: "Cabo Branco",
     location: "Cabo Branco - João Pessoa/PB",
@@ -170,7 +170,7 @@ export const caboBranco: Property[] = [
         "/empreendimentos/cabo-branco/botanic/6.webp",],
   },
   {
-    slug: "Moss",
+    slug: "moss",
     name: "Moss",
     neighborhood: "Cabo Branco",
     location: "Cabo Branco - João Pessoa/PB",
@@ -187,7 +187,7 @@ export const caboBranco: Property[] = [
         "/empreendimentos/cabo-branco/moss/6.webp",],
   },
   {
-    slug: "Mares Blanc (Pré-Lançamento)",
+    slug: "mares-blanc-pre-lancamento",
     name: "Mares Blanc (Pré-Lançamento)",
     neighborhood: "Cabo Branco",
     location: "Cabo Branco - João Pessoa/PB",
@@ -200,7 +200,7 @@ export const caboBranco: Property[] = [
         "/empreendimentos/cabo-branco/mares-blanc/2.webp",],
   },
    {
-    slug: "Savaii (Pré-Lançamento)",
+    slug: "savaii-pre-lancamento",
     name: "Savaii (Pré-Lançamento)",
     neighborhood: "Cabo Branco",
     location: "Cabo Branco - João Pessoa/PB",
@@ -212,7 +212,7 @@ export const caboBranco: Property[] = [
     images: ["/empreendimentos/cabo-branco/savaii/1.webp",],
   },
   {
-    slug: "Marall (Pré-Lançamento)",
+    slug: "marall-pre-lancamento",
     name: "Marall (Pré-Lançamento)",
     neighborhood: "Cabo Branco",
     location: "Cabo Branco - João Pessoa/PB",
@@ -229,7 +229,7 @@ export const caboBranco: Property[] = [
         "/empreendimentos/cabo-branco/marall/6.webp",],
   },
   {
-    slug: "Mio Cabo Branco (Pré-Lançamento)",
+    slug: "mio-cabo-branco-pre-lancamento",
     name: "Mio Cabo Branco (Pré-Lançamento)",
     neighborhood: "Cabo Branco",
     location: "Cabo Branco - João Pessoa/PB",
@@ -246,7 +246,7 @@ export const caboBranco: Property[] = [
         "/empreendimentos/cabo-branco/mio/6.webp",],
   },
    {
-    slug: "Arya (Pré-Lançamento)",
+    slug: "arya-pre-lancamento",
     name: "Arya (Pré-Lançamento)",
     neighborhood: "Cabo Branco",
     location: "Cabo Branco - João Pessoa/PB",
@@ -263,7 +263,7 @@ export const caboBranco: Property[] = [
         "/empreendimentos/cabo-branco/arya/6.webp",],
   },
   {
-    slug: "Marli Pina Home Flat",
+    slug: "marli-pina-home-flat",
     name: "Marli Pina Home Flat",
     neighborhood: "Cabo Branco",
     location: "Cabo Branco - João Pessoa/PB",
@@ -275,7 +275,7 @@ export const caboBranco: Property[] = [
     images: ["/empreendimentos/cabo-branco/marli-pina/1.webp",],
   },
    {
-    slug: "Jobim By Coppa",
+    slug: "jobim-by-coppa",
     name: "Jobim By Coppa",
     neighborhood: "Cabo Branco",
     location: "Cabo Branco - João Pessoa/PB",
@@ -292,7 +292,7 @@ export const caboBranco: Property[] = [
         "/empreendimentos/cabo-branco/jobim-by-coppa/6.webp",],
   },
   {
-    slug: "Vision Cabo Branco",
+    slug: "vision-cabo-branco",
     name: "Vision Cabo Branco",
     neighborhood: "Cabo Branco",
     location: "Cabo Branco - João Pessoa/PB",
@@ -309,7 +309,7 @@ export const caboBranco: Property[] = [
         "/empreendimentos/cabo-branco/vision-cabo-branco/6.webp",],
   },
   {
-    slug: "New Wave Home Flat",
+    slug: "new-wave-home-flat",
     name: "New Wave Home Flat",
     neighborhood: "Cabo Branco",
     location: "Cabo Branco - João Pessoa/PB",
@@ -326,7 +326,7 @@ export const caboBranco: Property[] = [
         "/empreendimentos/cabo-branco/new-wave-home-flat/6.webp",],
   },
    {
-    slug: "Leblanc Jane Miranda Flat",
+    slug: "leblanc-jane-miranda-flat",
     name: "Leblanc Jane Miranda Flat",
     neighborhood: "Cabo Branco",
     location: "Cabo Branco - João Pessoa/PB",
@@ -343,7 +343,7 @@ export const caboBranco: Property[] = [
         "/empreendimentos/cabo-branco/leblanc/6.webp",],
   },
    {
-    slug: "Atmosphera",
+    slug: "atmosphera",
     name: "Atmosphera",
     neighborhood: "Cabo Branco",
     location: "Cabo Branco - João Pessoa/PB",
@@ -360,7 +360,7 @@ export const caboBranco: Property[] = [
         "/empreendimentos/cabo-branco/atmosphera/6.webp",],
   },
   {
-    slug: "Nai",
+    slug: "nai",
     name: "Nai",
     neighborhood: "Cabo Branco",
     location: "Cabo Branco - João Pessoa/PB",
@@ -377,7 +377,7 @@ export const caboBranco: Property[] = [
         "/empreendimentos/cabo-branco/nai/6.webp",],
   },
   {
-    slug: "Reserva da Mata",
+    slug: "reserva-da-mata",
     name: "Reserva da Mata",
     neighborhood: "Cabo Branco",
     location: "Cabo Branco - João Pessoa/PB",
@@ -394,7 +394,7 @@ export const caboBranco: Property[] = [
         "/empreendimentos/cabo-branco/reserva-da-mata/6.webp",],
   },
   {
-    slug: "Jangada",
+    slug: "jangada",
     name: "Jangada",
     neighborhood: "Cabo Branco",
     location: "Cabo Branco - João Pessoa/PB",
@@ -407,7 +407,7 @@ export const caboBranco: Property[] = [
         "/empreendimentos/cabo-branco/jangada/2.webp",],
   },
   {
-    slug: "Atlantis Reserva Cabo Branco",
+    slug: "atlantis-reserva-cabo-branco",
     name: "Atlantis Reserva Cabo Branco",
     neighborhood: "Cabo Branco",
     location: "Cabo Branco - João Pessoa/PB",

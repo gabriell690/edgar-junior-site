@@ -2,7 +2,7 @@ import type { Property } from "../../types/Property";
 
 export const jardimOceania: Property[] = [
  {
-    slug: "Vila do Mar",
+    slug: "vila-do-mar",
     name: "Vila do Mar",
     neighborhood: "Jardim Oceania",
     location: "Jardim Oceania - João Pessoa/PB",
@@ -20,7 +20,7 @@ export const jardimOceania: Property[] = [
     ],
   },
   {
-    slug: "Get Running",
+    slug: "get-running",
     name: "Get Running",
     neighborhood: "Jardim Oceania",
     location: "Jardim Oceania - João Pessoa/PB",
@@ -38,7 +38,7 @@ export const jardimOceania: Property[] = [
     ],
   },
     {
-    slug: "Haus Artefacto",
+    slug: "haus-artefacto",
     name: "Haus Artefacto",
     neighborhood: "Jardim Oceania",
     location: "Jardim Oceania - João Pessoa/PB",
@@ -56,7 +56,7 @@ export const jardimOceania: Property[] = [
     ],
   },
   {
-    slug: "Aman Bessa",
+    slug: "aman-bessa",
     name: "Aman Bessa",
     neighborhood: "Jardim Oceania",
     location: "Jardim Oceania - João Pessoa/PB",
@@ -74,7 +74,7 @@ export const jardimOceania: Property[] = [
     ],
   },
   {
-    slug: "Altana Oceania",
+    slug: "altana-oceania",
     name: "Altana Oceania",
     neighborhood: "Jardim Oceania",
     location: "Jardim Oceania - João Pessoa/PB",
@@ -92,7 +92,7 @@ export const jardimOceania: Property[] = [
     ],
   },
   {
-    slug: "Rio Curuçá",
+    slug: "rio-curuca",
     name: "Rio Curuçá",
     neighborhood: "Jardim Oceania",
     location: "Jardim Oceania - João Pessoa/PB",
@@ -110,7 +110,7 @@ export const jardimOceania: Property[] = [
     ],
   },
    {
-    slug: "Amares",
+    slug: "amares",
     name: "Amares",
     neighborhood: "Jardim Oceania",
     location: "Jardim Oceania - João Pessoa/PB",
@@ -128,7 +128,7 @@ export const jardimOceania: Property[] = [
     ],
   },
   {
-    slug: "Parkmar",
+    slug: "parkmar",
     name: "Parkmar",
     neighborhood: "Jardim Oceania",
     location: "Jardim Oceania - João Pessoa/PB",
@@ -146,7 +146,7 @@ export const jardimOceania: Property[] = [
     ],
   },
   {
-    slug: "Urban Prime",
+    slug: "urban-prime",
     name: "Urban Prime",
     neighborhood: "Jardim Oceania",
     location: "Jardim Oceania - João Pessoa/PB",
@@ -164,7 +164,7 @@ export const jardimOceania: Property[] = [
     ],
   },
   {
-    slug: "Stay Oceania",
+    slug: "stay-oceania",
     name: "Stay Oceania",
     neighborhood: "Jardim Oceania",
     location: "Jardim Oceania - João Pessoa/PB",
@@ -182,7 +182,7 @@ export const jardimOceania: Property[] = [
     ],
   },
   {
-    slug: "Sereno Beach",
+    slug: "sereno-beach",
     name: "Sereno Beach",
     neighborhood: "Jardim Oceania",
     location: "Jardim Oceania - João Pessoa/PB",
@@ -200,7 +200,7 @@ export const jardimOceania: Property[] = [
     ],
   },
    {
-    slug: "Vita Bosques",
+    slug: "vita-bosques",
     name: "Vita Bosques",
     neighborhood: "Jardim Oceania",
     location: "Jardim Oceania - João Pessoa/PB",
@@ -218,7 +218,7 @@ export const jardimOceania: Property[] = [
     ],
   },
   {
-    slug: "Moara Beach Home ( Pré-Lançamento )",
+    slug: "moara-beach-home-pre-lancamento",
     name: "Moara Beach Home ( Pré-Lançamento )",
     neighborhood: "Jardim Oceania",
     location: "Jardim Oceania - João Pessoa/PB",
@@ -231,7 +231,7 @@ export const jardimOceania: Property[] = [
     ],
   },
   {
-    slug: "Domus Parque ( Pré-Lançamento )",
+    slug: "domus-parque-pre-lancamento",
     name: "Domus Parque ( Pré-Lançamento )",
     neighborhood: "Jardim Oceania",
     location: "Jardim Oceania - João Pessoa/PB",
@@ -246,7 +246,7 @@ export const jardimOceania: Property[] = [
              "/empreendimentos/jardim-oceania/domus/4.webp",],
   },
   {
-    slug: "Dual Playa ( Pré-Lançamento )",
+    slug: "dual-playa-pre-lancamento",
     name: "Dual Playa ( Pré-Lançamento )",
     neighborhood: "Jardim Oceania",
     location: "Jardim Oceania - João Pessoa/PB",
@@ -261,7 +261,7 @@ export const jardimOceania: Property[] = [
              "/empreendimentos/sjardim-oceania/dual/4.webp",],
   },
   {
-    slug: "Maison Du Parc",
+    slug: "maison-du-parc",
     name: "Maison Du Parc",
     neighborhood: "Jardim Oceania",
     location: "Jardim Oceania - João Pessoa/PB",
@@ -279,7 +279,7 @@ export const jardimOceania: Property[] = [
     ],
   },
   {
-    slug: "Canoa",
+    slug: "canoa",
     name: "Canoa",
     neighborhood: "Jardim Oceania",
     location: "Jardim Oceania - João Pessoa/PB",
@@ -292,7 +292,7 @@ export const jardimOceania: Property[] = [
     ],
   },
   {
-    slug: "Mares Seaview ( Pré-Lançamento )",
+    slug: "mares-seaview-pre-lancamento",
     name: "Mares Seaview ( Pré-Lançamento )",
     neighborhood: "Jardim Oceania",
     location: "Jardim Oceania - João Pessoa/PB",
@@ -310,7 +310,7 @@ export const jardimOceania: Property[] = [
     ],
   },
   {
-    slug: "Bauten Parque",
+    slug: "bauten-parque",
     name: "Bauten Parque",
     neighborhood: "Jardim Oceania",
     location: "Jardim Oceania - João Pessoa/PB",
@@ -328,7 +328,7 @@ export const jardimOceania: Property[] = [
     ],
   },
   {
-    slug: "Domi Oceania",
+    slug: "domi-oceania",
     name: "Domi Oceania",
     neighborhood: "Jardim Oceania",
     location: "Jardim Oceania - João Pessoa/PB",
@@ -346,7 +346,7 @@ export const jardimOceania: Property[] = [
     ],
   },
    {
-    slug: "Visione Acqua",
+    slug: "visione-acqua",
     name: "Visione Acqua",
     neighborhood: "Jardim Oceania",
     location: "Jardim Oceania - João Pessoa/PB",
@@ -364,7 +364,7 @@ export const jardimOceania: Property[] = [
     ],
   },
   {
-    slug: "Park Vision Oceania",
+    slug: "park-vision-oceania",
     name: "Park Vision Oceania",
     neighborhood: "Jardim Oceania",
     location: "Jardim Oceania - João Pessoa/PB",
@@ -382,7 +382,7 @@ export const jardimOceania: Property[] = [
     ],
   },
   {
-    slug: "Sunny",
+    slug: "sunny",
     name: "Sunny",
     neighborhood: "Jardim Oceania",
     location: "Jardim Oceania - João Pessoa/PB",
@@ -400,7 +400,7 @@ export const jardimOceania: Property[] = [
     ],
   },
   {
-    slug: "Mahalo Residencial",
+    slug: "mahalo-residencial",
     name: "Mahalo Residencial",
     neighborhood: "Jardim Oceania",
     location: "Jardim Oceania - João Pessoa/PB",
@@ -418,7 +418,7 @@ export const jardimOceania: Property[] = [
     ],
   },
   {
-    slug: "Corais Haus",
+    slug: "corais-haus",
     name: "Corais Haus",
     neighborhood: "Jardim Oceania",
     location: "Jardim Oceania - João Pessoa/PB",
@@ -436,7 +436,7 @@ export const jardimOceania: Property[] = [
     ],
   },
   {
-    slug: "Ocean Oásis",
+    slug: "ocean-oasis",
     name: "Ocean Oásis",
     neighborhood: "Jardim Oceania",
     location: "Jardim Oceania - João Pessoa/PB",
@@ -454,7 +454,7 @@ export const jardimOceania: Property[] = [
     ],
   },
   {
-    slug: "Acqua Living",
+    slug: "acqua-living",
     name: "Acqua Living",
     neighborhood: "Jardim Oceania",
     location: "Jardim Oceania - João Pessoa/PB",
@@ -472,7 +472,7 @@ export const jardimOceania: Property[] = [
     ],
   },
   {
-    slug: "Rio Paru",
+    slug: "rio-paru",
     name: "Rio Paru",
     neighborhood: "Jardim Oceania",
     location: "Jardim Oceania - João Pessoa/PB",
@@ -490,7 +490,7 @@ export const jardimOceania: Property[] = [
     ],
   },
   {
-    slug: "Atmos Club",
+    slug: "atmos-club",
     name: "Atmos Club",
     neighborhood: "Jardim Oceania",
     location: "Jardim Oceania - João Pessoa/PB",
@@ -508,7 +508,7 @@ export const jardimOceania: Property[] = [
     ],
   },
   {
-    slug: "5S Oceania",
+    slug: "5s-oceania",
     name: "5S Oceania",
     neighborhood: "Jardim Oceania",
     location: "Jardim Oceania - João Pessoa/PB",
@@ -526,7 +526,7 @@ export const jardimOceania: Property[] = [
     ],
   },
    {
-    slug: "Sunflower Residence",
+    slug: "sunflower-residence",
     name: "Sunflower Residence",
     neighborhood: "Jardim Oceania",
     location: "Jardim Oceania - João Pessoa/PB",
@@ -544,7 +544,7 @@ export const jardimOceania: Property[] = [
     ],
   },
    {
-    slug: "Up Life Flat Home",
+    slug: "up-life-flat-home",
     name: "Up Life Flat Home",
     neighborhood: "Jardim Oceania",
     location: "Jardim Oceania - João Pessoa/PB",
@@ -562,7 +562,7 @@ export const jardimOceania: Property[] = [
     ],
   },
   {
-    slug: "Aura Loft",
+    slug: "aura-loft",
     name: "Aura Loft",
     neighborhood: "Jardim Oceania",
     location: "Jardim Oceania - João Pessoa/PB",
@@ -580,7 +580,7 @@ export const jardimOceania: Property[] = [
     ],
   },
    {
-    slug: "Vitacea",
+    slug: "vitacea",
     name: "Vitacea",
     neighborhood: "Jardim Oceania",
     location: "Jardim Oceania - João Pessoa/PB",
@@ -598,7 +598,7 @@ export const jardimOceania: Property[] = [
     ],
   },
   {
-    slug: "Setai Miraji",
+    slug: "setai-miraji",
     name: "Setai Miraji",
     neighborhood: "Jardim Oceania",
     location: "Jardim Oceania - João Pessoa/PB",
@@ -616,7 +616,7 @@ export const jardimOceania: Property[] = [
     ],
   },
   {
-    slug: "Mondo",
+    slug: "mondo",
     name: "Mondo",
     neighborhood: "Jardim Oceania",
     location: "Jardim Oceania - João Pessoa/PB",
@@ -634,7 +634,7 @@ export const jardimOceania: Property[] = [
     ],
   },
   {
-    slug: "Get4You",
+    slug: "get4you",
     name: "Get4You",
     neighborhood: "Jardim Oceania",
     location: "Jardim Oceania - João Pessoa/PB",
@@ -652,7 +652,7 @@ export const jardimOceania: Property[] = [
     ],
   },
   {
-    slug: "Akua Design Bessa",
+    slug: "akua-design-bessa",
     name: "Akua Design Bessa",
     neighborhood: "Jardim Oceania",
     location: "Jardim Oceania - João Pessoa/PB",
@@ -670,7 +670,7 @@ export const jardimOceania: Property[] = [
     ],
   },
   {
-    slug: "Caribe Design",
+    slug: "caribe-design",
     name: "Caribe Design",
     neighborhood: "Jardim Oceania",
     location: "Jardim Oceania - João Pessoa/PB",
@@ -688,7 +688,7 @@ export const jardimOceania: Property[] = [
     ],
   },
    {
-    slug: "Sens",
+    slug: "sens",
     name: "Sens",
     neighborhood: "Jardim Oceania",
     location: "Jardim Oceania - João Pessoa/PB",

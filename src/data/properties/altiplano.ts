@@ -3,7 +3,7 @@ import type { Property } from "../../types/Property";
 export const altiplano: Property[] = [
 
  {
-    slug: "Artus Blanc",
+    slug: "artus-blanc",
     name: "Artus Blanc",
     neighborhood: "Altiplano",
     location: "Altiplano - João Pessoa/PB",
@@ -20,7 +20,7 @@ export const altiplano: Property[] = [
              "/empreendimentos/altiplano/artus-blanc/6.webp",],
   },
   {
-    slug: "One Haus",
+    slug: "one-haus",
     name: "One Haus",
     neighborhood: "Altiplano",
     location: "Altiplano - João Pessoa/PB",
@@ -37,7 +37,7 @@ export const altiplano: Property[] = [
              "/empreendimentos/altiplano/one-haus/6.webp",],
   },
   {
-    slug: "Alti",
+    slug: "alti",
     name: "Alti",
     neighborhood: "Altiplano",
     location: "Altiplano - João Pessoa/PB",
@@ -53,7 +53,7 @@ export const altiplano: Property[] = [
              "/empreendimentos/altiplano/alti/5.webp",
              "/empreendimentos/altiplano/alti/6.webp",],
   },{
-    slug: "Reserva Altiplano",
+    slug: "reserva-altiplano",
     name: "Reserva Altiplano",
     neighborhood: "Altiplano",
     location: "Altiplano - João Pessoa/PB",
@@ -69,7 +69,7 @@ export const altiplano: Property[] = [
              "/empreendimentos/altiplano/reserva-altiplano/5.webp",
              "/empreendimentos/altiplano/reserva-altiplano/6.webp",],
   },{
-    slug: "Oro",
+    slug: "oro",
     name: "Oro",
     neighborhood: "Altiplano",
     location: "Altiplano - João Pessoa/PB",
@@ -85,7 +85,7 @@ export const altiplano: Property[] = [
              "/empreendimentos/altiplano/oro/5.webp",
              "/empreendimentos/altiplano/oro/6.webp",],
   },{
-    slug: "Pininfarina",
+    slug: "pininfarina",
     name: "Pininfarina",
     neighborhood: "Altiplano",
     location: "Altiplano - João Pessoa/PB",
@@ -101,7 +101,7 @@ export const altiplano: Property[] = [
              "/empreendimentos/altiplano/pininfarina/5.webp",
              "/empreendimentos/altiplano/pininfarina/6.webp",],
   },{
-    slug: "Armorial",
+    slug: "armorial",
     name: "Armorial",
     neighborhood: "Altiplano",
     location: "Altiplano - João Pessoa/PB",

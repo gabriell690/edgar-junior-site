@@ -2,7 +2,7 @@ import type { Property } from "../../types/Property";
 
 export const miramar: Property[] = [
       {
-    slug: "Concept",
+    slug: "concept",
     name: "Concept",
     neighborhood: "Miramar",
     location: "Miramar - João Pessoa/PB",
@@ -20,7 +20,7 @@ export const miramar: Property[] = [
     ],
   },
    {
-    slug: "Essence Ruy Carneiro",
+    slug: "essence-ruy-carneiro",
     name: "Essence Ruy Carneiro",
     neighborhood: "Miramar",
     location: "Miramar - João Pessoa/PB",

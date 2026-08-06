@@ -3,7 +3,7 @@ import type { Property } from "../../types/Property";
 export const aeroclube: Property[] = [
     
     {
-    slug: "Bloom Living",
+    slug: "bloom-living",
     name: "Bloom Living",
     neighborhood: "Aeroclube",
     location: "Aeroclube - João Pessoa/PB",
@@ -20,7 +20,7 @@ export const aeroclube: Property[] = [
              "/empreendimentos/aeroclube/bloom-living/6.webp",],
   },
   {
-    slug: "Elo Gold",
+    slug: "elo-gold",
     name: "Elo Gold",
     neighborhood: "Aeroclube",
     location: "Aeroclube - João Pessoa/PB",
@@ -37,7 +37,7 @@ export const aeroclube: Property[] = [
              "/empreendimentos/aeroclube/elo-gold/6.webp",],
   },
   {
-    slug: "Vivir Maria Renata",
+    slug: "vivir-maria-renata",
     name: "Vivir Maria Renata",
     neighborhood: "Aeroclube",
     location: "Aeroclube - João Pessoa/PB",
@@ -53,7 +53,7 @@ export const aeroclube: Property[] = [
              "/empreendimentos/aeroclube/vivir-maria-renata/5.webp",
              "/empreendimentos/aeroclube/vivir-maria-renata/6.webp",],
   }, {
-    slug: "Brooklin",
+    slug: "brooklin",
     name: "Brooklin",
     neighborhood: "Aeroclube",
     location: "Aeroclube - João Pessoa/PB",
@@ -69,7 +69,7 @@ export const aeroclube: Property[] = [
              "/empreendimentos/aeroclube/brooklin/5.webp",
              "/empreendimentos/aeroclube/brooklin/6.webp",],
   },{
-    slug: "Zion",
+    slug: "zion",
     name: "Zion",
     neighborhood: "Aeroclube",
     location: "Aeroclube - João Pessoa/PB",
@@ -86,7 +86,7 @@ export const aeroclube: Property[] = [
              "/empreendimentos/aeroclube/zion/6.webp",],
   },
   {
-    slug: "Eco Aeropark",
+    slug: "eco-aeropark",
     name: "Eco Aeropark",
     neighborhood: "Aeroclube",
     location: "Aeroclube - João Pessoa/PB",
@@ -102,7 +102,7 @@ export const aeroclube: Property[] = [
              "/empreendimentos/aeroclube/eco-aeropark/5.webp",
              "/empreendimentos/aeroclube/eco-aeropark/6.webp",],
   },{
-    slug: "Mais Garden",
+    slug: "mais-garden",
     name: "Mais Garden",
     neighborhood: "Aeroclube",
     location: "Aeroclube - João Pessoa/PB",

@@ -3,7 +3,7 @@ import type { Property } from "../../types/Property";
 export const formosa: Property[] = [
 
  {
-    slug: "Veleiro Design",
+    slug: "veleiro-design",
     name: "Veleiro Design",
     neighborhood: "Formosa",
     location: "Formosa - João Pessoa/PB",
@@ -21,7 +21,7 @@ export const formosa: Property[] = [
     ],
   },
   {
-    slug: "Farol 137",
+    slug: "farol-137",
     name: "Farol 137",
     neighborhood: "Formosa",
     location: "Formosa - João Pessoa/PB",
@@ -39,7 +39,7 @@ export const formosa: Property[] = [
     ],
   },
   {
-    slug: "The Haus",
+    slug: "the-haus",
     name: "The Haus",
     neighborhood: "Formosa",
     location: "Formosa - João Pessoa/PB",
@@ -57,7 +57,7 @@ export const formosa: Property[] = [
     ],
   },
   {
-    slug: "Golden Beach Club",
+    slug: "golden-beach-club",
     name: "Golden Beach Club",
     neighborhood: "Formosa",
     location: "Formosa - João Pessoa/PB",
@@ -75,7 +75,7 @@ export const formosa: Property[] = [
     ],
   },
   {
-    slug: "Bela Formosa",
+    slug: "bela-formosa",
     name: "Bela Formosa",
     neighborhood: "Formosa",
     location: "Formosa - João Pessoa/PB",

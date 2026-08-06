@@ -2,7 +2,7 @@ import type { Property } from "../../types/Property";
 
 export const pontaDeCampina: Property[] = [
       {
-    slug: "Emmar",
+    slug: "emmar",
     name: "Emmar",
     neighborhood: "Ponta de Campina",
     location: "Ponta de Campina - João Pessoa/PB",
@@ -20,7 +20,7 @@ export const pontaDeCampina: Property[] = [
     ],
   },
   {
-    slug: "Yafah ( Pré-Lançamento )",
+    slug: "yafah-pre-lancamento",
     name: "Yafah ( Pré-Lançamento )",
     neighborhood: "Ponta de Campina",
     location: "Ponta de Campina - João Pessoa/PB",
@@ -38,7 +38,7 @@ export const pontaDeCampina: Property[] = [
     ],
   },
   {
-    slug: "Saline",
+    slug: "saline",
     name: "Saline",
     neighborhood: "Ponta de Campina",
     location: "Ponta de Campina - João Pessoa/PB",
@@ -56,7 +56,7 @@ export const pontaDeCampina: Property[] = [
     ],
   },
   {
-    slug: "Setai Beach Resort & Residence",
+    slug: "setai-beach-resort-residence",
     name: "Setai Beach Resort & Residence",
     neighborhood: "Ponta de Campina",
     location: "Ponta de Campina - João Pessoa/PB",
@@ -74,7 +74,7 @@ export const pontaDeCampina: Property[] = [
     ],
   },
   {
-    slug: "Yakã Residence Resort",
+    slug: "yaka-residence-resort",
     name: "Yakã Residence Resort",
     neighborhood: "Ponta de Campina",
     location: "Ponta de Campina - João Pessoa/PB",
@@ -92,7 +92,7 @@ export const pontaDeCampina: Property[] = [
     ],
   },
   {
-    slug: "Alta Wave",
+    slug: "alta-wave",
     name: "Alta Wave",
     neighborhood: "Ponta de Campina",
     location: "Ponta de Campina - João Pessoa/PB",

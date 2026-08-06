@@ -3,7 +3,7 @@ import type { Property } from "../../types/Property";
 export const jardimLuna: Property[] = [
 
  {
-    slug: "Live Residence",
+    slug: "live-residence",
     name: "Live Residence",
     neighborhood: "Jardim Luna",
     location: "Jardim Luna - João Pessoa/PB",

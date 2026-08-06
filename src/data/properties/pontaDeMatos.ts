@@ -2,7 +2,7 @@ import type { Property } from "../../types/Property";
 
 export const pontaDeMatos: Property[] = [
       {
-    slug: "Samburá",
+    slug: "sambura",
     name: "Samburá",
     neighborhood: "Ponta de Matos",
     location: "Ponta de Matos - João Pessoa/PB",

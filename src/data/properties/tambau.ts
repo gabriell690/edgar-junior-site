@@ -2,7 +2,7 @@ import type { Property } from "../../types/Property";
 
 export const tambau: Property[] = [
       {
-    slug: "Get Like",
+    slug: "get-like",
     name: "Get Like",
     neighborhood: "Tambaú",
     location: "Tambaú - João Pessoa/PB",
@@ -20,7 +20,7 @@ export const tambau: Property[] = [
     ],
   },
   {
-    slug: "The Garden",
+    slug: "the-garden",
     name: "The Garden",
     neighborhood: "Tambaú",
     location: "Tambaú - João Pessoa/PB",
@@ -38,7 +38,7 @@ export const tambau: Property[] = [
     ],
   },
   {
-    slug: "Soho",
+    slug: "soho",
     name: "Soho",
     neighborhood: "Tambaú",
     location: "Tambaú - João Pessoa/PB",
@@ -56,7 +56,7 @@ export const tambau: Property[] = [
     ],
   },
    {
-    slug: "Holandas Gold Flats",
+    slug: "holandas-gold-flats",
     name: "Holandas Gold Flats",
     neighborhood: "Tambaú",
     location: "Tambaú - João Pessoa/PB",
@@ -68,7 +68,7 @@ export const tambau: Property[] = [
     images: [ ],
   },
   {
-    slug: "Ryokan",
+    slug: "ryokan",
     name: "Ryokan",
     neighborhood: "Tambaú",
     location: "Tambaú - João Pessoa/PB",
@@ -86,7 +86,7 @@ export const tambau: Property[] = [
     ],
   },
    {
-    slug: "Millennial",
+    slug: "millennial",
     name: "Millennial",
     neighborhood: "Tambaú",
     location: "Tambaú - João Pessoa/PB",
@@ -104,7 +104,7 @@ export const tambau: Property[] = [
     ],
   },
   {
-    slug: "Hayo ( Pré-Lançamento )",
+    slug: "hayo-pre-lancamento",
     name: "Hayo ( Pré-Lançamento )",
     neighborhood: "Tambaú",
     location: "Tambaú - João Pessoa/PB",
@@ -122,7 +122,7 @@ export const tambau: Property[] = [
     ],
   },
    {
-    slug: "Nui ( Pré-Lançamento )",
+    slug: "nui-pre-lancamento",
     name: "Nui ( Pré-Lançamento )",
     neighborhood: "Tambaú",
     location: "Tambaú - João Pessoa/PB",
@@ -140,7 +140,7 @@ export const tambau: Property[] = [
     ],
   },
   {
-    slug: "Soneto",
+    slug: "soneto",
     name: "Soneto",
     neighborhood: "Tambaú",
     location: "Tambaú - João Pessoa/PB",
@@ -158,7 +158,7 @@ export const tambau: Property[] = [
     ],
   },
   {
-    slug: "Atlantis New",
+    slug: "atlantis-new",
     name: "Atlantis New",
     neighborhood: "Tambaú",
     location: "Tambaú - João Pessoa/PB",
@@ -176,7 +176,7 @@ export const tambau: Property[] = [
     ],
   },
   {
-    slug: "Get – A – Way",
+    slug: "get-a-way",
     name: "Get – A – Way",
     neighborhood: "Tambaú",
     location: "Tambaú - João Pessoa/PB",

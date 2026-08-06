@@ -2,7 +2,7 @@ import type { Property } from "../../types/Property";
 
 export const poco: Property[] = [
       {
-    slug: "Savili Beach",
+    slug: "savili-beach",
     name: "Savili Beach",
     neighborhood: "Poço",
     location: "Poço - João Pessoa/PB",
@@ -20,7 +20,7 @@ export const poco: Property[] = [
     ],
   },
   {
-    slug: "Ocean Drive",
+    slug: "ocean-drive",
     name: "Ocean Drive",
     neighborhood: "Poço",
     location: "Poço - João Pessoa/PB",
@@ -38,7 +38,7 @@ export const poco: Property[] = [
     ],
   },
   {
-    slug: "Setai Sailor",
+    slug: "setai-sailor",
     name: "Setai Sailor",
     neighborhood: "Poço",
     location: "Poço - João Pessoa/PB",
@@ -56,7 +56,7 @@ export const poco: Property[] = [
     ],
   },
   {
-    slug: "Kaleo",
+    slug: "kaleo",
     name: "Kaleo",
     neighborhood: "Poço",
     location: "Poço - João Pessoa/PB",

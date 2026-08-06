@@ -2,7 +2,7 @@ import type { Property } from "../../types/Property";
 
 export const manaira: Property[] = [
       {
-    slug: "Urbi Mare",
+    slug: "urbi-mare",
     name: "Urbi Mare",
     neighborhood: "Manaira",
     location: "Manaira - João Pessoa/PB",
@@ -20,7 +20,7 @@ export const manaira: Property[] = [
     ],
   },
    {
-    slug: "Atmosphera Manaíra",
+    slug: "atmosphera-manaira",
     name: "Atmosphera Manaíra",
     neighborhood: "Manaira",
     location: "Manaira - João Pessoa/PB",
@@ -39,7 +39,7 @@ export const manaira: Property[] = [
   },
 
   {
-    slug: "Hit Pedro Ramos Coutinho",
+    slug: "hit-pedro-ramos-coutinho",
     name: "Hit Pedro Ramos Coutinho",
     neighborhood: "Manaira",
     location: "Manaira - João Pessoa/PB",
@@ -57,7 +57,7 @@ export const manaira: Property[] = [
     ],
   },
   {
-    slug: "Sonatto",
+    slug: "sonatto",
     name: "Sonatto",
     neighborhood: "Manaira",
     location: "Manaira - João Pessoa/PB",
@@ -75,7 +75,7 @@ export const manaira: Property[] = [
     ],
   },
   {
-    slug: "Vetri 337",
+    slug: "vetri-337",
     name: "Vetri 337",
     neighborhood: "Manaira",
     location: "Manaira - João Pessoa/PB",
@@ -93,7 +93,7 @@ export const manaira: Property[] = [
     ],
   },
   {
-    slug: "Chaves Manaíra",
+    slug: "chaves-manaira",
     name: "Chaves Manaíra",
     neighborhood: "Manaira",
     location: "Manaira - João Pessoa/PB",
@@ -111,7 +111,7 @@ export const manaira: Property[] = [
     ],
   },
   {
-    slug: "Ocean Flat Residence",
+    slug: "ocean-flat-residence",
     name: "Ocean Flat Residence",
     neighborhood: "Manaira",
     location: "Manaira - João Pessoa/PB",
@@ -127,7 +127,7 @@ export const manaira: Property[] = [
     ],
   },
   {
-    slug: "Urbe Mare ( Pré-Lançamento )",
+    slug: "urbe-mare-pre-lancamento",
     name: "Urbe Mare ( Pré-Lançamento )",
     neighborhood: "Manaira",
     location: "Manaira - João Pessoa/PB",
@@ -145,7 +145,7 @@ export const manaira: Property[] = [
     ],
   },
   {
-    slug: "Hortus",
+    slug: "hortus",
     name: "Hortus",
     neighborhood: "Manaira",
     location: "Manaira - João Pessoa/PB",
@@ -163,7 +163,7 @@ export const manaira: Property[] = [
     ],
   },
    {
-    slug: "Omni",
+    slug: "omni",
     name: "Omni",
     neighborhood: "Manaira",
     location: "Manaira - João Pessoa/PB",
@@ -181,7 +181,7 @@ export const manaira: Property[] = [
     ],
   },
   {
-    slug: "Nakhon",
+    slug: "nakhon",
     name: "Nakhon",
     neighborhood: "Manaira",
     location: "Manaira - João Pessoa/PB",
@@ -193,7 +193,7 @@ export const manaira: Property[] = [
     images: [],
   },
   {
-    slug: "Orlamare",
+    slug: "orlamare",
     name: "Orlamare",
     neighborhood: "Manaira",
     location: "Manaira - João Pessoa/PB",
@@ -211,7 +211,7 @@ export const manaira: Property[] = [
     ],
   },
   {
-    slug: "Domus Jardins",
+    slug: "domus-jardins",
     name: "Domus Jardins",
     neighborhood: "Manaira",
     location: "Manaira - João Pessoa/PB",
@@ -228,7 +228,7 @@ export const manaira: Property[] = [
              "/empreendimentos/Manaira/domus/6.webp",],
   },
   {
-    slug: "Vita Studios",
+    slug: "vita-studios",
     name: "Vita Studios",
     neighborhood: "Manaira",
     location: "Manaira - João Pessoa/PB",
@@ -245,7 +245,7 @@ export const manaira: Property[] = [
              "/empreendimentos/Manaira/vita/6.webp",],
   },
   {
-    slug: "Wind",
+    slug: "wind",
     name: "Wind",
     neighborhood: "Manaira",
     location: "Manaira - João Pessoa/PB",

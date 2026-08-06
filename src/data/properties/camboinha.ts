@@ -2,7 +2,7 @@ import type { Property } from "../../types/Property";
 
 export const camboinha: Property[] = [
   {
-    slug: "Lavie Camboinha Residence",
+    slug: "lavie-camboinha-residence",
     name: "Lavie Camboinha Residence",
     neighborhood: "Camboinha",
     location: "Camboinha - João Pessoa/PB",
@@ -20,7 +20,7 @@ export const camboinha: Property[] = [
     ],
   },
    {
-    slug: "Leme",
+    slug: "leme Camboinha",
     name: "Leme",
     neighborhood: "Camboinha",
     location: "Camboinha - João Pessoa/PB",
@@ -28,17 +28,17 @@ export const camboinha: Property[] = [
     delivery: "Junho de 2027",
     category: "3 Quartos (Pé na Areia)",
     description: "",
-    cover: "/empreendimentos/camboinha/leme/capa.webp",
-    images: ["/empreendimentos/camboinha/leme/1.webp",
-      "/empreendimentos/camboinha/leme/2.webp",
-      "/empreendimentos/camboinha/leme/3.webp",
-      "/empreendimentos/camboinha/leme/4.webp",
-      "/empreendimentos/camboinha/leme/5.webp",
-      "/empreendimentos/camboinha/leme/6.webp",
+    cover: "/empreendimentos/camboinha/leme-camboinha/capa.webp",
+    images: ["/empreendimentos/camboinha/leme-camboinha/1.webp",
+      "/empreendimentos/camboinha/leme-camboinha/2.webp",
+      "/empreendimentos/camboinha/leme-camboinha/3.webp",
+      "/empreendimentos/camboinha/leme-camboinha/4.webp",
+      "/empreendimentos/camboinha/leme-camboinha/5.webp",
+      "/empreendimentos/camboinha/leme-camboinha/6.webp",
     ],
   },
     {
-    slug: "Thai",
+    slug: "thai",
     name: "Thai",
     neighborhood: "Camboinha",
     location: "Camboinha - João Pessoa/PB",
@@ -56,7 +56,7 @@ export const camboinha: Property[] = [
     ],
   },
     {
-    slug: "Aura Camboinha",
+    slug: "aura-camboinha",
     name: "Aura Camboinha",
     neighborhood: "Camboinha",
     location: "Camboinha - João Pessoa/PB",
@@ -74,7 +74,7 @@ export const camboinha: Property[] = [
     ],
   },
     {
-    slug: "Vivere Praia Concept",
+    slug: "vivere-praia-concept",
     name: "Vivere Praia Concept",
     neighborhood: "Camboinha",
     location: "Camboinha - João Pessoa/PB",

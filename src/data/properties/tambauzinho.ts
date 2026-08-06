@@ -2,7 +2,7 @@ import type { Property } from "../../types/Property";
 
 export const tambauzinho: Property[] = [
       {
-    slug: "Residencial Green",
+    slug: "residencial-green",
     name: "Residencial Green",
     neighborhood: "Tambauzinho",
     location: "Tambauzinho - João Pessoa/PB",
@@ -20,7 +20,7 @@ export const tambauzinho: Property[] = [
     ],
   },
   {
-    slug: "Blessed Home",
+    slug: "blessed-home",
     name: "Blessed Home",
     neighborhood: "Tambauzinho",
     location: "Tambauzinho - João Pessoa/PB",
@@ -38,7 +38,7 @@ export const tambauzinho: Property[] = [
     ],
   },
   {
-    slug: "Burj Lavie",
+    slug: "burj-lavie",
     name: "Burj Lavie",
     neighborhood: "Tambauzinho",
     location: "Tambauzinho - João Pessoa/PB",

@@ -3,7 +3,7 @@ import type { Property } from "../../types/Property";
 export const intermares: Property[] = [
 
      {
-    slug: "Honu",
+    slug: "honu",
     name: "Honu",
     neighborhood: "Intermares",
     location: "Intermares - João Pessoa/PB",
@@ -21,7 +21,7 @@ export const intermares: Property[] = [
     ],
   },
    {
-    slug: "Jasmin",
+    slug: "jasmin",
     name: "Jasmin",
     neighborhood: "Intermares",
     location: "Intermares - João Pessoa/PB",
@@ -39,7 +39,7 @@ export const intermares: Property[] = [
     ],
   },
    {
-    slug: "Porto Jardins",
+    slug: "porto-jardins",
     name: "Porto Jardins",
     neighborhood: "Intermares",
     location: "Intermares - João Pessoa/PB",
@@ -57,7 +57,7 @@ export const intermares: Property[] = [
     ],
   },
   {
-    slug: "Oásis Intermares",
+    slug: "oasis-intermares",
     name: "Oásis Intermares",
     neighborhood: "Intermares",
     location: "Intermares - João Pessoa/PB",
@@ -75,7 +75,7 @@ export const intermares: Property[] = [
     ],
   },
  {
-    slug: "Residencial Obadias",
+    slug: "residencial-obadias",
     name: "Residencial Obadias",
     neighborhood: "Intermares",
     location: "Intermares - João Pessoa/PB",
@@ -87,7 +87,7 @@ export const intermares: Property[] = [
     images: [],
   },
   {
-    slug: "Residencial Samoa",
+    slug: "residencial-samoa",
     name: "Residencial Samoa",
     neighborhood: "Intermares",
     location: "Intermares - João Pessoa/PB",
@@ -101,7 +101,7 @@ export const intermares: Property[] = [
              "/empreendimentos/intermares/residencial-samoa/3.webp",],
   },
   {
-    slug: "Isla",
+    slug: "isla",
     name: "Isla",
     neighborhood: "Intermares",
     location: "Intermares - João Pessoa/PB",
@@ -119,7 +119,7 @@ export const intermares: Property[] = [
     ],
   },
    {
-    slug: "Eq Ocean",
+    slug: "eq-ocean",
     name: "Eq Ocean",
     neighborhood: "Intermares",
     location: "Intermares - João Pessoa/PB",
@@ -137,7 +137,7 @@ export const intermares: Property[] = [
     ],
   },
   {
-    slug: "Domani (Pré-Lançamento)",
+    slug: "domani-pre-lancamento",
     name: "Domani (Pré-Lançamento)",
     neighborhood: "Intermares",
     location: "Intermares - João Pessoa/PB",
@@ -155,7 +155,7 @@ export const intermares: Property[] = [
     ],
   },
   {
-    slug: "G5 Beach",
+    slug: "g5-beach",
     name: "G5 Beach",
     neighborhood: "Intermares",
     location: "Intermares - João Pessoa/PB",
@@ -168,7 +168,7 @@ export const intermares: Property[] = [
              "/empreendimentos/intermares/g5-beach/2.webp",],
   },
   {
-    slug: "Brisa",
+    slug: "brisa",
     name: "Brisa",
     neighborhood: "Intermares",
     location: "Intermares - João Pessoa/PB",
@@ -185,7 +185,7 @@ export const intermares: Property[] = [
              "/empreendimentos/intermares/brisa/6.webp",],
   },
   {
-    slug: "Leme",
+    slug: "leme",
     name: "Leme",
     neighborhood: "Intermares",
     location: "Intermares - João Pessoa/PB",
@@ -193,16 +193,16 @@ export const intermares: Property[] = [
     delivery: "Dezembro de 2027",
     category: "Flats e 1 Quarto",
     description: "",
-    cover: "/empreendimentos/intermares/leme/capa.webp",
-    images: ["/empreendimentos/intermares/leme/1.webp",
-             "/empreendimentos/intermares/leme/2.webp",
-             "/empreendimentos/intermares/leme/3.webp",
-             "/empreendimentos/intermares/leme/4.webp",
-             "/empreendimentos/intermares/leme/5.webp",
-             "/empreendimentos/intermares/leme/6.webp",],
+    cover: "/empreendimentos/intermares/leme-intermares/capa.webp",
+    images: ["/empreendimentos/intermares/leme-intermares/1.webp",
+             "/empreendimentos/intermares/leme-intermares/2.webp",
+             "/empreendimentos/intermares/leme-intermares/3.webp",
+             "/empreendimentos/intermares/leme-intermares/4.webp",
+             "/empreendimentos/intermares/leme-intermares/5.webp",
+             "/empreendimentos/intermares/leme-intermares/6.webp",],
   },
   {
-    slug: "Hious",
+    slug: "hious",
     name: "Hious",
     neighborhood: "Intermares",
     location: "Intermares - João Pessoa/PB",
@@ -219,7 +219,7 @@ export const intermares: Property[] = [
              "/empreendimentos/intermares/hious/6.webp",],
   },
   {
-    slug: "Setai Houses Resort",
+    slug: "setai-houses-resort",
     name: "Setai Houses Resort",
     neighborhood: "Intermares",
     location: "Intermares - João Pessoa/PB",
@@ -236,7 +236,7 @@ export const intermares: Property[] = [
              "/empreendimentos/intermares/setai-houses-resort/6.webp",],
   },
   {
-    slug: "Florezza",
+    slug: "florezza",
     name: "Florezza",
     neighborhood: "Intermares",
     location: "Intermares - João Pessoa/PB",
@@ -253,7 +253,7 @@ export const intermares: Property[] = [
              "/empreendimentos/intermares/florezza/6.webp",],
   },
    {
-    slug: "Ares Design",
+    slug: "ares-design",
     name: "Ares Design",
     neighborhood: "Intermares",
     location: "Intermares - João Pessoa/PB",
@@ -270,7 +270,7 @@ export const intermares: Property[] = [
              "/empreendimentos/intermares/ares-design/6.webp",],
   },
   {
-    slug: "Salt Prime Studio",
+    slug: "salt-prime-studio",
     name: "Salt Prime Studio",
     neighborhood: "Intermares",
     location: "Intermares - João Pessoa/PB",
@@ -287,7 +287,7 @@ export const intermares: Property[] = [
              "/empreendimentos/intermares/salt-prime-studio/6.webp",],
   },
   {
-    slug: "Marena Residence",
+    slug: "marena-residence",
     name: "Marena Residence",
     neighborhood: "Intermares",
     location: "Intermares - João Pessoa/PB",
@@ -304,7 +304,7 @@ export const intermares: Property[] = [
              "/empreendimentos/intermares/marena-residence/6.webp",],
   },
   {
-    slug: "Plaza Belza Vista",
+    slug: "plaza-belza-vista",
     name: "Plaza Belza Vista",
     neighborhood: "Intermares",
     location: "Intermares - João Pessoa/PB",
@@ -321,7 +321,7 @@ export const intermares: Property[] = [
              "/empreendimentos/intermares/plaza-belza-vista/6.webp",],
   },
   {
-    slug: "Bless Compactos",
+    slug: "bless-compactos",
     name: "Bless Compactos",
     neighborhood: "Intermares",
     location: "Intermares - João Pessoa/PB",
@@ -338,7 +338,7 @@ export const intermares: Property[] = [
              "/empreendimentos/intermares/bless-compactos/6.webp",],
   },
   {
-    slug: "Owl Residence",
+    slug: "owl-residence",
     name: "Owl Residence",
     neighborhood: "Intermares",
     location: "Intermares - João Pessoa/PB",
@@ -355,7 +355,7 @@ export const intermares: Property[] = [
              "/empreendimentos/intermares/owl-residence/6.webp",],
   },
   {
-    slug: "Majestic",
+    slug: "majestic",
     name: "Majestic",
     neighborhood: "Intermares",
     location: "Intermares - João Pessoa/PB",

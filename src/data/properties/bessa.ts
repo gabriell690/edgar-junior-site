@@ -2,7 +2,7 @@ import type { Property } from "../../types/Property";
 
 export const bessa: Property[] = [
   {
-    slug: "Beach Class",
+    slug: "beach-class",
     name: "Beach Class",
     neighborhood: "Bessa",
     location: "Bessa - João Pessoa/PB",
@@ -20,7 +20,7 @@ export const bessa: Property[] = [
   },
 
   {
-    slug: "Summer Fit",
+    slug: "summer-fit",
     name: "Summer Fit",
     neighborhood: "Bessa",
     location: "Bessa (Beira-Mar) - João Pessoa/PB",
@@ -39,7 +39,7 @@ export const bessa: Property[] = [
   },
 
   {
-    slug: "Versa",
+    slug: "versa",
     name: "Versa",
     neighborhood: "Bessa",
     location: "Bessa - João Pessoa/PB",
@@ -58,7 +58,7 @@ export const bessa: Property[] = [
   },
 
   {
-    slug: "DuoBreeze",
+    slug: "duobreeze",
     name: "DuoBreeze",
     neighborhood: "Bessa",
     location: "Bessa - João Pessoa/PB",
@@ -75,7 +75,7 @@ export const bessa: Property[] = [
   },
 
   {
-    slug: "Ocean View",
+    slug: "ocean-view",
     name: "Ocean View",
     neighborhood: "Bessa",
     location: "Bessa - João Pessoa/PB",
@@ -94,7 +94,7 @@ export const bessa: Property[] = [
   },
 
   {
-    slug: "Green Park Bessa",
+    slug: "green-park-bessa",
     name: "Green Park Bessa",
     neighborhood: "Bessa",
     location: "Bessa - João Pessoa/PB",
@@ -112,7 +112,7 @@ export const bessa: Property[] = [
     ],
   },
   {
-    slug: "Bliss Bessa",
+    slug: "bliss-bessa",
     name: "Bliss Bessa",
     neighborhood: "Bessa",
     location: "Bessa - João Pessoa/PB",
@@ -130,7 +130,7 @@ export const bessa: Property[] = [
     ],
   },
    {
-    slug: "Firenze da Vinci",
+    slug: "firenze-da-vinci",
     name: "Firenze da Vinci",
     neighborhood: "Bessa",
     location: "Bessa - João Pessoa/PB",
@@ -148,7 +148,7 @@ export const bessa: Property[] = [
     ],
   },
   {
-    slug: "Wavez",
+    slug: "wavez",
     name: "Wavez",
     neighborhood: "Bessa",
     location: "Bessa - João Pessoa/PB",
@@ -166,7 +166,7 @@ export const bessa: Property[] = [
     ],
   },
    {
-    slug: "Elevatto",
+    slug: "elevatto",
     name: "Elevatto",
     neighborhood: "Bessa",
     location: "Bessa - João Pessoa/PB",
@@ -184,7 +184,7 @@ export const bessa: Property[] = [
     ],
   },
   {
-    slug: "Elo Beach",
+    slug: "elo-beach",
     name: "Elo Beach",
     neighborhood: "Bessa",
     location: "Bessa - João Pessoa/PB",
@@ -198,7 +198,7 @@ export const bessa: Property[] = [
              "/empreendimentos/Bessa/elo-beach/3.webp",],
   },
    {
-    slug: "Mares Seaside ( Pré-Lançamento )",
+    slug: "mares-seaside-pre-lancamento",
     name: "Mares Seaside ( Pré-Lançamento )",
     neighborhood: "Bessa",
     location: "Bessa - João Pessoa/PB",
@@ -214,7 +214,7 @@ export const bessa: Property[] = [
              "/empreendimentos/Bessa/mares-seaside/5.webp",],
   },
    {
-    slug: "Enseada ( Pré-Lançamento )",
+    slug: "enseada-pre-lancamento",
     name: "Enseada ( Pré-Lançamento )",
     neighborhood: "Bessa",
     location: "Bessa - João Pessoa/PB",
@@ -230,7 +230,7 @@ export const bessa: Property[] = [
              "/empreendimentos/Bessa/enseada/5.webp",],
   },
    {
-    slug: "Ocean Beach",
+    slug: "ocean-beach",
     name: "Ocean Beach",
     neighborhood: "Bessa",
     location: "Bessa - João Pessoa/PB",
@@ -247,7 +247,7 @@ export const bessa: Property[] = [
              "/empreendimentos/Bessa/ocean-beach/6.webp",],
   },
    {
-    slug: "Mirah ( Pré-Lançamento )",
+    slug: "mirah-pre-lancamento",
     name: "Mirah ( Pré-Lançamento )",
     neighborhood: "Bessa",
     location: "Bessa - João Pessoa/PB",
@@ -262,7 +262,7 @@ export const bessa: Property[] = [
              "/empreendimentos/Bessa/mirah/4.webp",],
   },
   {
-    slug: "Sorrento",
+    slug: "sorrento",
     name: "Sorrento",
     neighborhood: "Bessa",
     location: "Bessa - João Pessoa/PB",
@@ -280,7 +280,7 @@ export const bessa: Property[] = [
             
   },
   {
-    slug: "Mares Bessa",
+    slug: "mares-bessa",
     name: "Mares Bessa",
     neighborhood: "Bessa",
     location: "Bessa - João Pessoa/PB",
@@ -297,7 +297,7 @@ export const bessa: Property[] = [
              "/empreendimentos/Bessa/mares-bessa/6.webp",],
             
   }, {
-    slug: "Flat Mar De Lincoln",
+    slug: "flat-mar-de-lincoln",
     name: "Flat Mar De Lincoln",
     neighborhood: "Bessa",
     location: "Bessa - João Pessoa/PB",
@@ -311,7 +311,7 @@ export const bessa: Property[] = [
             
   },
    {
-    slug: "Ondas do Mar",
+    slug: "ondas-do-mar",
     name: "Ondas do Mar",
     neighborhood: "Bessa",
     location: "Bessa - João Pessoa/PB",
@@ -329,7 +329,7 @@ export const bessa: Property[] = [
             
   },
   {
-    slug: "Uno Beach",
+    slug: "uno-beach",
     name: "Uno Beach",
     neighborhood: "Bessa",
     location: "Bessa - João Pessoa/PB",
@@ -347,7 +347,7 @@ export const bessa: Property[] = [
             
   },
     {
-    slug: "URBI9",
+    slug: "urbi9",
     name: "URBI9",
     neighborhood: "Bessa",
     location: "Bessa - João Pessoa/PB",
@@ -365,7 +365,7 @@ export const bessa: Property[] = [
             
   },
    {
-    slug: "Hampton Park",
+    slug: "hampton-park",
     name: "Hampton Park",
     neighborhood: "Bessa",
     location: "Bessa - João Pessoa/PB",
@@ -383,7 +383,7 @@ export const bessa: Property[] = [
             
   },
   {
-    slug: "Sand park",
+    slug: "sand-park",
     name: "Sand park",
     neighborhood: "Bessa",
     location: "Bessa - João Pessoa/PB",
@@ -401,7 +401,7 @@ export const bessa: Property[] = [
             
   },
   {
-    slug: "Iconyc",
+    slug: "iconyc",
     name: "Iconyc",
     neighborhood: "Bessa",
     location: "Bessa - João Pessoa/PB",
@@ -419,7 +419,7 @@ export const bessa: Property[] = [
             
   },
    {
-    slug: "Mahal",
+    slug: "mahal",
     name: "Mahal",
     neighborhood: "Bessa",
     location: "Bessa - João Pessoa/PB",
@@ -436,7 +436,7 @@ export const bessa: Property[] = [
             "/empreendimentos/Bessa/mahal/6.webp",],
             },
              {
-    slug: "Voal",
+    slug: "voal",
     name: "Voal",
     neighborhood: "Bessa",
     location: "Bessa - João Pessoa/PB",
@@ -453,7 +453,7 @@ export const bessa: Property[] = [
             "/empreendimentos/Bessa/voal/6.webp",],
             },
             {
-    slug: "Pent Haus",
+    slug: "pent-haus",
     name: "Pent Haus",
     neighborhood: "Bessa",
     location: "Bessa - João Pessoa/PB",
@@ -472,7 +472,7 @@ export const bessa: Property[] = [
             "/empreendimentos/Bessa/pent-haus/8.webp",],
             },
     {
-    slug: "Native",
+    slug: "native",
     name: "Native",
     neighborhood: "Bessa",
     location: "Bessa - João Pessoa/PB",
@@ -489,7 +489,7 @@ export const bessa: Property[] = [
             "/empreendimentos/Bessa/native/6.webp",],
             },
             {
-    slug: "Heritage",
+    slug: "heritage",
     name: "Heritage",
     neighborhood: "Bessa",
     location: "Bessa - João Pessoa/PB",
@@ -506,7 +506,7 @@ export const bessa: Property[] = [
             "/empreendimentos/Bessa/heritage/6.webp",],
             },
             {
-    slug: "My Way",
+    slug: "my-way",
     name: "My Way",
     neighborhood: "Bessa",
     location: "Bessa - João Pessoa/PB",
@@ -523,7 +523,7 @@ export const bessa: Property[] = [
             "/empreendimentos/Bessa/my-way/6.webp",],
             },
             {
-    slug: "Park H2Orizon",
+    slug: "park-h2orizon",
     name: "Park H2Orizon",
     neighborhood: "Bessa",
     location: "Bessa - João Pessoa/PB",
