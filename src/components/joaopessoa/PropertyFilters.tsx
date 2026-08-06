@@ -9,8 +9,6 @@ import {
 
 interface Props {
   bairros: string[];
-  categorias: string[];
-
   busca: string;
   setBusca: (value: string) => void;
 
@@ -28,7 +26,6 @@ interface Props {
 
 export default function PropertyFilters({
   bairros,
-  categorias,
   busca,
   setBusca,
   bairroSelecionado,
@@ -48,20 +45,11 @@ export default function PropertyFilters({
 
   return (
     <aside
-      className="
-        sticky
-        top-24
-        rounded-3xl
-        border
-        border-zinc-800
-        bg-[#101010]
-        p-7
-        shadow-2xl
-      "
+      className="w-full"
     >
       {/* Cabeçalho */}
 
-      <div className="mb-8">
+      <div className="mb-5">
 
         <span className="text-xs uppercase tracking-[0.35em] text-yellow-500">
           Pesquisa Inteligente
@@ -79,7 +67,7 @@ export default function PropertyFilters({
 
       {/* Busca */}
 
-      <div className="mb-7">
+      <div className="mb-5">
 
         <label className="mb-2 flex items-center gap-2 text-sm text-zinc-400">
 
@@ -104,7 +92,7 @@ export default function PropertyFilters({
             border-zinc-700
             bg-zinc-900
             px-4
-            py-3
+            py-2.5
             text-white
             placeholder:text-zinc-500
             outline-none
@@ -117,7 +105,7 @@ export default function PropertyFilters({
 
       {/* Bairro */}
 
-      <div className="mb-6">
+      <div className="mb-5">
 
         <label className="mb-2 flex items-center gap-2 text-sm text-zinc-400">
 
@@ -140,7 +128,7 @@ export default function PropertyFilters({
             border-zinc-700
             bg-zinc-900
             px-4
-            py-3
+            py-2.5
             text-white
             outline-none
             transition
@@ -161,7 +149,7 @@ export default function PropertyFilters({
 
       {/* Categoria */}
 
-      <div className="mb-6">
+      <div className="mb-5">
 
         <label className="mb-2 flex items-center gap-2 text-sm text-zinc-400">
 
@@ -184,28 +172,23 @@ export default function PropertyFilters({
             border-zinc-700
             bg-zinc-900
             px-4
-            py-3
+            py-2.5
             text-white
             outline-none
             transition
             focus:border-yellow-500
           "
         >
-          {categorias.map((item) => (
-            <option
-              key={item}
-              value={item}
-            >
-              {item}
-            </option>
-          ))}
+          <option value="Todos">Todos</option>
+          <option value="Flat">Flat</option>
+          <option value="Apartamento">Apartamento</option>
         </select>
 
       </div>
 
       {/* Status */}
 
-      <div className="mb-8">
+      <div className="mb-5">
 
         <label className="mb-2 flex items-center gap-2 text-sm text-zinc-400">
 
@@ -228,7 +211,7 @@ export default function PropertyFilters({
             border-zinc-700
             bg-zinc-900
             px-4
-            py-3
+            py-2.5
             text-white
             outline-none
             transition
@@ -252,7 +235,7 @@ export default function PropertyFilters({
 
       {/* Resultado */}
 
-      <div className="mb-8 rounded-2xl bg-zinc-900 p-5">
+      <div className="mb-5 rounded-xl border border-zinc-800 bg-zinc-900/60 p-4">
 
         <div className="flex items-center gap-3">
 
@@ -294,7 +277,7 @@ export default function PropertyFilters({
           rounded-xl
           border
           border-yellow-500
-          py-3
+          py-2.5
           font-semibold
           text-yellow-500
           transition-all

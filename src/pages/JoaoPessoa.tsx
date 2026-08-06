@@ -49,19 +49,7 @@ export default function JoaoPessoa() {
 
   // Lista de categorias
 
-  const categorias = useMemo<string[]>(() => {
-  return [
-    "Todos",
-    ...Array.from(
-      new Set(
-        joaoPessoaProperties
-          .map((p) => p.category)
-          .filter((category): category is string => Boolean(category))
-          .map((category) => category.trim())
-      )
-    ).sort((a, b) => a.localeCompare(b, "pt-BR")),
-  ];
-}, [joaoPessoaProperties]);
+
 
   // Filtro inteligente
 
@@ -91,9 +79,24 @@ export default function JoaoPessoa() {
         bairroSelecionado === "Todos" ||
         property.neighborhood === bairroSelecionado;
 
-      const matchCategoria =
-        categoria === "Todos" ||
-        property.category === categoria;
+     const textoCategoria = normalize(
+  [
+    property.name,
+    property.category,
+    property.description,
+    property.location,
+  ]
+    .filter(Boolean)
+    .join(" ")
+);
+
+const temFlat = textoCategoria.includes("flat");
+const temQuartos = textoCategoria.includes("quarto");
+
+const matchCategoria =
+  categoria === "Todos" ||
+  (categoria === "Flat" && temFlat) ||
+  (categoria === "Apartamento" && temQuartos && !temFlat);
 
       const pronto =
         normalize(property.delivery) === "pronto";
@@ -124,38 +127,70 @@ export default function JoaoPessoa() {
     nome: p.name,
   }))
 );
-  return (
-    <Layout>
+ return (
+  <Layout>
 
-      <Hero />
+    {/* ========================================
+        SIDEBAR FIXA
+    ======================================== */}
+   <aside
+  className="
+    hidden lg:flex
+    fixed
+    left-0
+    top-16
+    bottom-0
+    z-40
+    w-70
+    flex-col
+    border-r
+    border-zinc-800/70
+    bg-[#0b0b0b]
+  "
+>
+  <div
+    className="
+      flex-1
+      overflow-y-auto
+      px-5
+      py-5
+      scrollbar-thin
+    "
+  >
+    <PropertyFilters
+  bairros={bairros}
+  busca={busca}
+  setBusca={setBusca}
+  bairroSelecionado={bairroSelecionado}
+  setBairroSelecionado={setBairroSelecionado}
+  categoria={categoria}
+  setCategoria={setCategoria}
+  tipo={tipo}
+  setTipo={setTipo}
+  totalResultados={filteredProperties.length}
+/>
+  </div>
+</aside>
 
-      <MarketTickerJP />
 
-      <InteractiveMap
-        selectedNeighborhood={bairroSelecionado}
-        onNeighborhoodSelect={setBairroSelecionado}
-      />
+    {/* ========================================
+        TODO O CONTEÚDO DA PÁGINA
+    ======================================== */}
+   <div className="lg:ml-70">
+  <Hero />
 
-      <PropertyFilters
-        bairros={bairros}
-        categorias={categorias}
-        busca={busca}
-        setBusca={setBusca}
-        bairroSelecionado={bairroSelecionado}
-        setBairroSelecionado={setBairroSelecionado}
-        categoria={categoria}
-        setCategoria={setCategoria}
-        tipo={tipo}
-        setTipo={setTipo}
-        totalResultados={filteredProperties.length}
-      />
+  <MarketTickerJP />
 
-      <PropertyGrid
-        properties={filteredProperties}
-      />
+  <InteractiveMap
+    selectedNeighborhood={bairroSelecionado}
+    onNeighborhoodSelect={setBairroSelecionado}
+  />
 
-      <CTAJoaoPessoa />
+  <PropertyGrid properties={filteredProperties} />
 
-    </Layout>
-  );
+  <CTAJoaoPessoa />
+</div>
+
+  </Layout>
+);
 }

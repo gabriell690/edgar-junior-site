@@ -1,121 +1,65 @@
-
-
 export default function About() {
   return (
-    <section
-      id="sobre"
-      className="bg-black py-24 lg:py-32"
-    >
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="sobre" className="relative overflow-hidden bg-black py-24 lg:py-32">
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_18%_40%,rgba(234,179,8,0.08),transparent_28%)]" />
 
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-
-          {/* FOTO */}
-     <div className="relative flex justify-center items-center w-full lg:-translate-x-24">
-
- 
-{/* Foto principal */}
-<div
- className="
-relative
-z-10
-overflow-hidden
-rounded-3xl
-shadow-[0_30px_80px_rgba(0,0,0,0.5)]
-w-full
-max-w-137.5
-"
->
-  <img
-    src="/edgar5.jpg"
-    alt="Edgar Junior"
-    className="w-full object-cover"
-  />
-</div>
-</div>
-
-          {/* TEXTO */}
-          <div>
-
-            <span
-              className="
-                text-yellow-400
-                uppercase
-                tracking-[0.3em]
-                text-sm
-              "
-            >
-              Sobre Edgar Junior
-            </span>
-
-            <h2
-              className="
-                text-4xl
-                md:text-5xl
-                font-light
-                text-white
-                mt-6
-                leading-tight
-              "
-            >
-              Atendimento exclusivo para quem busca
-              <span className="block text-yellow-400 font-semibold">
-                excelência em cada detalhe.
-              </span>
-            </h2>
-
-            <p
-              className="
-                text-gray-300
-                leading-8
-                mt-8
-                text-lg
-              "
-            >
-              Edgar Junior atua no mercado imobiliário oferecendo uma
-              experiência personalizada para clientes que desejam
-              encontrar o imóvel ideal, investir com segurança e
-              construir patrimônio de forma inteligente.
-            </p>
-
-            <p
-              className="
-                text-gray-300
-                leading-8
-                mt-6
-                text-lg
-              "
-            >
-              Com foco em imóveis de alto padrão em Campina Grande e
-              João Pessoa, seu trabalho é pautado pela transparência,
-              atenção aos detalhes e compromisso com resultados.
-            </p>
-
-            {/* DIFERENCIAIS */}
-            <div className="grid sm:grid-cols-2 gap-4 mt-10">
-
-              <div className="bg-zinc-900 rounded-2xl p-5 border border-zinc-800">
-                ✓ Atendimento Personalizado
-              </div>
-
-              <div className="bg-zinc-900 rounded-2xl p-5 border border-zinc-800">
-                ✓ Imóveis Exclusivos
-              </div>
-
-              <div className="bg-zinc-900 rounded-2xl p-5 border border-zinc-800">
-                ✓ Consultoria de Investimentos
-              </div>
-
-              <div className="bg-zinc-900 rounded-2xl p-5 border border-zinc-800">
-                ✓ Acompanhamento Completo
-              </div>
-
+      <div className="relative mx-auto max-w-7xl px-6">
+        <div className="grid items-center gap-14 lg:grid-cols-[0.88fr_1.12fr] lg:gap-20">
+          <div className="relative">
+            <div className="absolute -inset-3 rounded-4xl border border-yellow-500/20" />
+            <div className="relative overflow-hidden rounded-[1.75rem] border border-white/10 bg-zinc-950 shadow-[0_35px_100px_rgba(0,0,0,0.65)]">
+              <img
+                src="/edgar5.jpg"
+                alt="Edgar Junior"
+                className="aspect-4/5 w-full object-cover"
+              />
+              <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-black/35 via-transparent to-transparent" />
             </div>
-
           </div>
 
-        </div>
+          <div className="max-w-3xl">
+            <div className="mb-7 flex items-center gap-4">
+            </div>
 
+            <div className="border-l border-yellow-400/50 pl-5">
+              <p className="text-sm font-semibold uppercase tracking-[0.28em] text-yellow-400">
+                Edgar Junior
+              </p>
+              <p className="mt-2 text-sm uppercase tracking-[0.12em] text-zinc-300">
+                Corretor de Imóveis | Especialista em Lançamentos Imobiliários
+              </p>
+            </div>
+
+            <h2 className="mt-8 max-w-3xl text-3xl font-light leading-[1.12] text-white md:text-4xl xl:text-5xl">
+              Uma das maiores referências da Paraíba em
+              <span className="text-yellow-400"> lançamentos imobiliários de médio e alto padrão.</span>
+            </h2>
+
+            <div className="mt-9 space-y-5 text-[15px] leading-7 text-zinc-300 md:text-base md:leading-8">
+              <p>
+                Atua com uma consultoria imobiliária exclusiva para quem busca excelência em cada detalhe.
+              </p>
+
+              <p>
+                Especialista em lançamentos de condomínios horizontais e verticais, oferece uma consultoria personalizada e estratégica para clientes e investidores que buscam imóveis com grande potencial de valorização, alta rentabilidade e segurança patrimonial.
+              </p>
+
+              <p>
+                Meu propósito é conectar você às melhores oportunidades do mercado imobiliário premium paraibano, apresentando empreendimentos cuidadosamente selecionados e desenvolvidos por construtoras renomadas, de grande credibilidade e confiança.
+              </p>
+
+              <p>
+                Cada atendimento é conduzido com discrição e foco na melhor experiência do cliente, pautado pela transparência, segurança, atenção aos detalhes e compromisso com resultados.
+              </p>
+            </div>
+
+            <div className="mt-9 border-t border-white/10 pt-7">
+              <p className="text-lg font-medium leading-8 text-white md:text-xl">
+                Conheça o melhor portfólio da Paraíba e descubra o imóvel ideal para você.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

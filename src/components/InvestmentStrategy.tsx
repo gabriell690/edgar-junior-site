@@ -1,4 +1,3 @@
-
 export default function InvestmentStrategy() {
   return (
     <section className="relative overflow-hidden bg-linear-to-b from-zinc-950 via-black to-zinc-950 py-28">
@@ -35,20 +34,32 @@ xl:gap-24
             </h2>
 
             <p className="mt-8 text-lg leading-9 text-zinc-400">
-              Comprar um imóvel é uma decisão importante, mas investir
-              de forma inteligente exige muito mais do que escolher um
-              empreendimento bonito. É necessário analisar o mercado,
-              compreender o potencial de valorização, a liquidez da
-              região e identificar oportunidades capazes de gerar
-              patrimônio no longo prazo.
-            </p>
+               Decisões patrimoniais inteligentes exigem visão de mercado,
+               análise criteriosa e uma compreensão profunda do potencial de
+               valorização, liquidez e crescimento de cada oportunidade.
+             </p>
 
-            <p className="mt-6 text-lg leading-9 text-zinc-400">
-              Nossa consultoria é construída para orientar cada decisão
-              com base em estratégia, experiência e dados de mercado,
-              proporcionando investimentos mais seguros e rentáveis em
-              João Pessoa e Campina Grande.
-            </p>
+             <p className="mt-6 text-lg leading-9 text-zinc-400">
+               Unimos experiência, estudos de cada região, dados de mercado e
+               uma análise estratégica personalizada para identificar ativos
+               imobiliários com alto potencial de valorização.
+             </p>
+
+             <p className="mt-6 text-lg leading-9 text-zinc-400">
+               Mais do que apresentar imóveis, construímos estratégias
+               patrimoniais capazes de transformar escolhas imobiliárias em
+               investimentos sólidos para o futuro.
+             </p>
+
+             <div className="mt-8 border-l-2 border-yellow-500 pl-5">
+               <p className="text-lg font-medium leading-8 text-white">
+                 Cada imóvel possui uma história. Cada cliente possui um objetivo.
+               </p>
+               <p className="mt-2 text-base leading-7 text-zinc-400">
+                 Unimos ambos com precisão e análise de mercado,
+                 transformando-os em grandes oportunidades.
+               </p>
+             </div>
 
             {/* Cards */}
 
