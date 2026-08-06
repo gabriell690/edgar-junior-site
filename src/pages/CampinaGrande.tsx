@@ -5,6 +5,7 @@ import PropertyFilters from "../components/joaopessoa/PropertyFilters";
 import Layout from "../components/Layout";
 import { properties } from "../data/properties";
 import MarketTickerCG from "../components/market/MarketTickerCG";
+import SEO from "../components/SEO";
 
 export default function CampinaGrande() {
   const [tipo, setTipo] = useState("Todos");
@@ -48,7 +49,11 @@ const [categoria, setCategoria] = useState("Todos");
   return (
     
       <Layout>
-      
+       <SEO
+    title="Imóveis em Campina Grande | Edgar Junior"
+    description="Apartamentos, flats e lançamentos imobiliários em Campina Grande. Conheça oportunidades selecionadas para morar ou investir."
+    canonical="/campina-grande"
+  />
           {/* ========================================
               SIDEBAR FIXA
           ======================================== */}

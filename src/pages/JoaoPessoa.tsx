@@ -7,6 +7,7 @@ import InteractiveMap from "../components/InteractiveMap";
 import PropertyFilters from "../components/joaopessoa/PropertyFilters";
 import PropertyGrid from "../components/joaopessoa/PropertyGrid";
 import CTAJoaoPessoa from "../components/joaopessoa/CTAJoaoPessoa";
+import SEO from "../components/SEO";
 
 import { properties } from "../data/properties";
 
@@ -129,7 +130,11 @@ const matchCategoria =
 );
  return (
   <Layout>
-
+<SEO
+    title="Imóveis em João Pessoa | Edgar Junior"
+    description="Apartamentos, flats e lançamentos imobiliários em João Pessoa. Conheça oportunidades selecionadas para morar ou investir."
+    canonical="/joao-pessoa"
+  />
     {/* ========================================
         SIDEBAR FIXA
     ======================================== */}

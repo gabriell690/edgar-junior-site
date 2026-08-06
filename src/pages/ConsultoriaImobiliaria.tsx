@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Layout from "../components/Layout";
+import SEO from "../components/SEO";
 
 export default function ConsultoriaImobiliaria() {
   const [form, setForm] = useState({
@@ -63,6 +64,11 @@ ${form.observacoes}`;
 
   return (
     <Layout>
+       <SEO
+    title="Consultoria Imobiliária | Edgar Junior"
+    description="Obtenha orientação especializada para sua compra ou investimento imobiliário em João Pessoa e Campina Grande."
+    canonical="/consultoria-imobiliaria"
+  />
       {/* HERO */}
 
       <section className="relative pt-40 pb-24 overflow-hidden">

@@ -8,6 +8,7 @@ import {
   ChevronDown,
 } from "lucide-react";
 import { useEffect } from "react";
+import SEO from "../components/SEO";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { properties } from "../data/properties";
@@ -37,9 +38,20 @@ export default function Property() {
       </>
     );
   }
+  
 
   return (
     <>
+    <SEO
+  title={`${property.name} | Imóvel em ${property.neighborhood} | Edgar Junior`}
+  description={
+    property.description
+      ? `${property.description.slice(0, 150)}...`
+      : `Conheça o ${property.name}, empreendimento localizado em ${property.neighborhood}. Consulte disponibilidade, valores e condições com Edgar Junior.`
+  }
+  canonical={`/lancamentos/${property.slug}`}
+  image={property.cover}
+/>
       <Navbar />
 
       <main className="bg-gray-50 text-zinc-900">
