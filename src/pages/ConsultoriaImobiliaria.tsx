@@ -94,7 +94,7 @@ ${form.observacoes}`;
       {/* FORMULÁRIO */}
 
       <section className="pb-32">
-        <div className="container-edgar max-w-5xl">
+        <div className="container-edgar max-w-5xl mx-auto px-6">
 
           <div className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-10 md:p-14">
 
