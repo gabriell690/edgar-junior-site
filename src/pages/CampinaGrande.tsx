@@ -1,3 +1,4 @@
+ 
 import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import PropertyFilters from "../components/joaopessoa/PropertyFilters";
@@ -43,19 +44,6 @@ const [categoria, setCategoria] = useState("Todos");
 
     return bairro && categoria;
   });
-  const categorias = useMemo(() => {
-  return [
-    "Todos",
-    ...Array.from(
-      new Set(
-        campinaProperties
-          .map((p) => p.category)
-          .filter((category): category is string => Boolean(category))
-          .map((category) => category.trim())
-      )
-    ).sort((a, b) => a.localeCompare(b, "pt-BR")),
-  ];
-}, [campinaProperties]);
 
   return (
     <Layout>
@@ -169,19 +157,18 @@ const [categoria, setCategoria] = useState("Todos");
 </section>
 
       {/* FILTROS */}
-       <PropertyFilters
-               bairros={bairros}
-               categorias={categorias}
-               busca={busca}
-               setBusca={setBusca}
-               bairroSelecionado={bairroSelecionado}
-               setBairroSelecionado={setBairroSelecionado}
-               categoria={categoria}
-               setCategoria={setCategoria}
-               tipo={tipo}
-               setTipo={setTipo}
-               totalResultados={filteredProperties.length}
-             />
+        <PropertyFilters
+         bairros={bairros}
+         busca={busca}
+         setBusca={setBusca}
+         bairroSelecionado={bairroSelecionado}
+         setBairroSelecionado={setBairroSelecionado}
+         categoria={categoria}
+         setCategoria={setCategoria}
+         tipo={tipo}
+         setTipo={setTipo}
+         totalResultados={filteredProperties.length}
+       />
 
       {/* IMÓVEIS */}
       <section className="pb-28">
